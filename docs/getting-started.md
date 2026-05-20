@@ -11,6 +11,11 @@ pip install mkdocs mkdocs-material
 
 ## Lokale server starten
 
+'''bash
+blablab
+'''
+
+
 '''Bash
 mkdocs serve
 '''
