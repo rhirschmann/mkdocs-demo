@@ -15,6 +15,10 @@ pip install mkdocs mkdocs-material
 blablab
 '''
 
+=== "PowerShell"
+    ```powershell
+    Get-Process
+    ```
 
 '''Bash
 mkdocs serve
