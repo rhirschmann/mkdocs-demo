@@ -1,0 +1,15 @@
+site_name: mkdocs-demo
+site_description: Voorbeeld MkDocs project met automatische inrichting
+site_author: Ruud Hirschmann
+repo_url: https://github.com/rhirschmann/mkdocs-demo
+theme:
+  name: material
+
+extra:
+  version: 0.1.0
+  created: 20-05-2026
+
+nav:
+- Home: index.md
+- Getting Started: getting-started.md
+- About: about.md
