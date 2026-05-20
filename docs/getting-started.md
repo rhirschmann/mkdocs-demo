@@ -4,13 +4,13 @@ MkDocs is een statische sitegenerator voor documentatie.
 
 ## Installatie
 
-\\\ash
+\\\Bash
 pip install mkdocs mkdocs-material
 \\\
 
 ## Lokale server starten
 
-\\\ash
+\\\Bash
 mkdocs serve
 \\\
 
