@@ -1,8 +1,19 @@
-# Welkom bij mkdocs-demo
+---
+title: Welkom
+hide:
+  - navigation
+---
 
-Versie: **0.1.0**  
-Aangemaakt op: **20-05-2026**
+# Welkom bij mijn documentatie
 
-Voorbeeld MkDocs project met automatische inrichting
+Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs Material**.
 
-Ga verder met [Getting Started](getting-started.md).
+## 🚀 Wat vind je hier?
+
+- Heldere uitleg
+- Mooie navigatie
+- Direct zoeken
+- Automatische deploys via GitHub Actions
+
+## 📚 Begin hier
+👉 [Getting Started](getting-started/index.md)

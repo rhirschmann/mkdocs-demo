@@ -17,3 +17,8 @@ mkdocs serve
 
 ## Deploy
 Automatisch via GitHub Actions.
+
+## Voorbeeld deployment
+
+https://rhirschmann.github.io/mkdocs-demo/
+
