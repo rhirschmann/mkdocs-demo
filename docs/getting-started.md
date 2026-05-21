@@ -3,11 +3,15 @@
 MkDocs is een statische sitegenerator voor documentatie.
 
 ## Installatie
+
+*Bash*
 ```
 pip install mkdocs mkdocs-material
 ```
 
 ## Lokale server starten
+
+*Bash*
 ```
 mkdocs serve
 ```

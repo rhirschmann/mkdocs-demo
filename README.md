@@ -10,9 +10,10 @@ Voorbeeld MkDocs project met automatische inrichting
 
 ## Lokale ontwikkeling
 
-'''Bash
+*Bash*
+```
 mkdocs serve
-'''
+```
 
 ## Deploy
 Automatisch via GitHub Actions.
