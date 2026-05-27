@@ -5,6 +5,28 @@ De opmaak volgt [Keep a Changelog](https://keepachangelog.com/nl/1.0.0/).
 
 ---
 
+## [0.3.0] — 2026-05-27
+
+### Toegevoegd
+
+- Features-pagina met demonstratie van alle MkDocs Material mogelijkheden op één plek
+- Blog plugin met automatisch archief, categorieën, tags en leestijdindicatie
+- Eerste blogpost: "Welkom bij de mkdocs-demo blog!"
+- Auteursprofiel via `docs/blog/.authors.yml`
+- Toetsenbordtoetsen notatie via `pymdownx.keys` extensie
+- `content.code.annotate` feature toegevoegd aan thema
+
+### Gewijzigd
+
+- Navigatie uitgebreid met "Features" en "Blog" tabbladen
+- `mkdocs.yml` uitgebreid met `pymdownx.keys` extensie
+
+### Opgelost
+
+- `mkdocs-git-revision-date-localized` verwijderd wegens incompatibiliteit met MkDocs 1.6.1
+
+---
+
 ## [0.2.0] — 2026-05-27
 
 ### Toegevoegd
@@ -32,7 +54,7 @@ De opmaak volgt [Keep a Changelog](https://keepachangelog.com/nl/1.0.0/).
 
 - Dubbele `theme:` sleutel verwijderd uit `mkdocs.yml`
 - Nav-paden gecorrigeerd na introductie van submappen
-- Paginabrede icooonweergave opgelost door `pymdownx.emoji` toe te voegen
+- Paginabrede icoonweergave opgelost door `pymdownx.emoji` toe te voegen
 
 ---
 
