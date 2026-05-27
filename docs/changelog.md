@@ -27,8 +27,6 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 - **`getting-started/alternatieven.md`** — Nieuwe vergelijkingspagina met
   9 documentatietools (MkDocs, Sphinx, Docusaurus, VitePress, Hugo, Jekyll,
   GitBook, Docsify en Starlight)
-- **Meertaligheid (i18n)** — Engelse vertalingen toegevoegd via
-  `mkdocs-static-i18n` plugin (index, about, getting-started en abbreviations)
 
 ### Gewijzigd
 
@@ -37,13 +35,13 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
     - `tags` plugin vervangen door `material/tags`
     - `tags_file: tags.md` verwijderd — toekomstbestendig en zonder waarschuwingen
     - `deployment.md` en `alternatieven.md` toegevoegd aan de navigatiestructuur
-    - `mkdocs-static-i18n` plugin toegevoegd met Nederlands als standaardtaal en Engels als tweede taal
 - **`features.md`** — 404-sectie bijgewerkt met uitleg over `site_url` vereiste,
   gedragstabel per platform en admonitions voor met/zonder `site_url`
 - **`features.md`** — Tags-sectie uitgebreid met `hide: tags` optie,
   overzichtstabel voor taggedrag en best practice tip
 - **`features.md`** — Meertaligheid (i18n) sectie toegevoegd met configuratie,
-  bestandsnaamconventie en taalschakelaar uitleg
+  bestandsnaamconventie, taalschakelaar en bekende beperkingen (niet compatibel
+  met de blog plugin, [GitHub Issue #4863](https://github.com/squidfunk/mkdocs-material/issues/4863))
 - **`index.md`** — Welkomstpagina uitgebreid met vijfde navigatiekaart voor
   features, top 10 kenmerken tabel, deployment admonition en extra navigatieknop
 - **`getting-started/index.md`** — Introductie bijgewerkt met `deployment.md`

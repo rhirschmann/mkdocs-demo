@@ -75,6 +75,7 @@ site_url: https://rhirschmann.github.io/mkdocs-demo/
     [Trigger een 404-pagina](../bestaat-niet/){ .md-button .md-button--primary }
 
 ---
+
 ## Meertaligheid (i18n)
 
 MkDocs ondersteunt meertalige documentatie via de `mkdocs-static-i18n` plugin.
@@ -94,8 +95,8 @@ theme:
 
 ### Meertalige content
 
-Voor het aanbieden van documentatie in meerdere talen wordt de `mkdocs-static-i18n`
-plugin gebruikt. Installeer deze via pip:
+Voor het aanbieden van documentatie in meerdere talen kan de `mkdocs-static-i18n`
+plugin gebruikt worden. Installeer deze via pip:
 
 ```bash
 pip install mkdocs-static-i18n
@@ -114,27 +115,6 @@ plugins:
           name: English
           build: true
 ```
-
-!!! warning "Bekende beperkingen"
-    De i18n plugin heeft twee bekende beperkingen waar rekening mee gehouden
-    moet worden.
-
-    **navigation.instant:** De taalschakelaar is niet compatibel met de
-    `navigation.instant` feature. Verwijder deze uit je thema-configuratie
-    wanneer je de i18n plugin gebruikt.
-
-    ```yaml title="mkdocs.yml"
-    theme:
-      features:
-        # - navigation.instant  ← niet compatibel met i18n
-        - navigation.tabs
-        - navigation.sections
-    ```
-
-    **Blog plugin:** De i18n plugin kan niet overweg met automatisch gegenereerde
-    bestanden van de blog plugin (archief- en categoriepagina's). Dit resulteert
-    in `Unhandled file case` waarschuwingen die onschadelijk zijn. Zorg ervoor
-    dat de i18n plugin **vóór** de blog plugin staat in `mkdocs.yml`.
 
 ### Bestandsnaamconventie
 
@@ -163,10 +143,26 @@ de beschikbare talen.
 | `build: true` | De vertaling wordt meegebouwd |
 | Geen `.en.md` variant | Pagina wordt alleen in de standaardtaal getoond |
 
+!!! danger "Niet compatibel met de Blog plugin"
+    De `mkdocs-static-i18n` plugin is **niet compatibel** met de ingebouwde
+    Material blog plugin. Blogposts worden niet meer getoond wanneer beide
+    plugins tegelijkertijd actief zijn. Dit is een bevestigd probleem zonder
+    oplossing ([GitHub Issue #4863](https://github.com/squidfunk/mkdocs-material/issues/4863)).
+    Kies daarom voor **óf** de blog plugin **óf** de i18n plugin.
+
+!!! warning "navigation.instant"
+    De taalschakelaar is niet compatibel met de `navigation.instant` feature.
+    Verwijder deze uit je thema-configuratie wanneer je de i18n plugin gebruikt.
+
 !!! tip "Niet alles hoeft vertaald"
     Pagina's zonder vertaling worden automatisch in de standaardtaal getoond.
     Je hoeft dus niet alle pagina's te vertalen om meertaligheid te activeren.
-    
+
+!!! info "Deze demo"
+    In deze demo is gekozen voor de blog plugin. Meertaligheid via de i18n
+    plugin is daarom niet geactiveerd maar wel gedocumenteerd op deze pagina
+    als referentie.
+
 ---
 
 ## Tags
