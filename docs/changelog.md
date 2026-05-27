@@ -1,10 +1,9 @@
 ---
-title: Changelog
-hide:
-  - tags
 tags:
   - changelog
   - versiehistorie
+hide:
+  - tags
 ---
 
 # Changelog
@@ -19,8 +18,8 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 ### Toegevoegd
 
 - **`features.md`** — Nieuwe pagina met uitgebreide demonstratie van 13 MkDocs Material features:
-    - 404-pagina (link via knop)
-    - Tags via frontmatter
+    - 404-pagina (custom implementatie met vergelijkingstabel en codevoorbeeld)
+    - Tags via frontmatter, inclusief `hide: tags` optie en gedragsoverzicht
     - Admonitions (note, tip, warning, danger, success, info, collapsible)
     - Code blokken met syntaxkleuring, regelnummers en kopieerknop
     - Content Tabs voor meerdere talen/opties naast elkaar
@@ -43,19 +42,34 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 
 ### Gewijzigd
 
+- **`features.md`** — Tags-sectie uitgebreid:
+    - `hide: tags` frontmatter optie toegevoegd als codevoorbeeld
+    - Overzichtstabel toegevoegd met taggedrag per instelling
+    - Tip admonition toegevoegd over best practices voor tags
+- **`features.md`** — 404-sectie uitgebreid:
+    - Vergelijkingstabel toegevoegd tussen standaard en custom 404-pagina
+    - Implementatie codevoorbeeld toegevoegd van de daadwerkelijke `404.md`
+    - Uitleg toegevoegd over `hide` frontmatter (navigatie en toc verborgen)
+    - Info admonition toegevoegd over lokaal vs. live gedrag
+    - Info admonition toegevoegd over testen via `mkdocs build` + `python -m http.server`
 - **`index.md`** — Welkomstpagina uitgebreid:
     - Vijfde navigatiekaart toegevoegd voor `features.md`
     - Kenmerken tabel ingekort naar top 10 met verwijzing naar `features.md`
     - Info admonition toegevoegd over ondersteunde deployment platforms
     - Derde navigatieknop toegevoegd naar `features.md`
+    - `hide: tags` toegevoegd aan frontmatter
 - **`getting-started/index.md`** — Introductie pagina bijgewerkt:
     - `deployment.md` toegevoegd aan de projectstructuur
     - Verwijzing en navigatieknoppen naar `install.md` en `deployment.md` toegevoegd
+    - `hide: tags` toegevoegd aan frontmatter
 - **`about/index.md`** — Over-pagina uitgebreid:
     - Tags frontmatter toegevoegd
+    - `hide: tags` toegevoegd aan frontmatter
     - Pagina-overzicht tabel toegevoegd met alle huidige pagina's
     - Volledige feature lijst toegevoegd
     - Overzicht van ondersteunde deployment platforms toegevoegd
+- **`changelog.md`** — Frontmatter bijgewerkt:
+    - `hide: tags` toegevoegd aan frontmatter
 - **`includes/abbreviations.md`** — Afkortingenlijst uitgebreid van 6 naar 20 afkortingen:
     - Nieuw toegevoegd: CSS, Git, pip, CLI, MIT, CDN, JSON, HTTP, HTTPS, AWS, API, VS Code, PR, MD
     - Etymologische nuances verwerkt voor Git, YAML, pip en MIT
@@ -79,7 +93,7 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
     - Eerste blogpost: `2026-05-07-welkom.md`
 - **`changelog.md`** — Versiehistorie pagina
 - **`tags.md`** — Overzichtspagina van alle gebruikte tags
-- **`404.md`** — Aangepaste foutpagina voor niet-bestaande URL's
+- **`404.md`** — Custom foutpagina zonder navigatie en inhoudsopgave
 - **`includes/abbreviations.md`** — Eerste versie met 6 afkortingen
 - **`.github/workflows/deploy.yml`** — Automatische deployment via GitHub Actions
 

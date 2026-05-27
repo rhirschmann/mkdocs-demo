@@ -4,8 +4,17 @@ hide:
   - tags
 tags:
   - deployment
+  - cloudflare
+  - cloudflare pages
+  - azure static web apps
+  - azure
+  - lokaal
+  - read the docs
   - hosting
   - github-pages
+  - github
+  - gitlab
+  - gitlab pages
   - netlify
   - vercel
 ---

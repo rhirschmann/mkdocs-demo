@@ -15,6 +15,8 @@ tags:
   - grids & Cards
   - knoppen
   - mermaid diagrammen
+  - diagrammen
+  - flowcharts
   - takenlijsten
   - tabellen
   - footnotes
@@ -94,6 +96,34 @@ tags:
   - overzicht
 ---
 ```
+
+### Tags verbergen
+
+Tags blijven altijd werken in de zoekfunctie en op de [tagpagina](tags.md),
+ook als ze visueel verborgen zijn op de pagina zelf. Voeg `tags` toe aan de
+`hide` lijst in de frontmatter om ze te verbergen:
+
+```yaml
+---
+tags:
+  - demo
+  - features
+hide:
+  - tags
+---
+```
+
+### Overzicht taggedrag
+
+| Instelling | Zichtbaar op pagina | Zichtbaar in zoekfunctie | Zichtbaar op tagpagina |
+|---|:---:|:---:|:---:|
+| Tags zonder `hide` | ✅ | ✅ | ✅ |
+| Tags met `hide: tags` | ❌ | ✅ | ✅ |
+| Geen tags | ❌ | ❌ | ❌ |
+
+!!! tip "Best practice"
+    Voeg tags altijd toe via de frontmatter, ook als je ze visueel verbergt.
+    Ze blijven dan doorzoekbaar en zichtbaar op de tagpagina.
 
 ---
 
