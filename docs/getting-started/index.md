@@ -1,10 +1,9 @@
 ---
-title: Getting started
-hide:
-  - tags
 tags:
   - mkdocs
   - introductie
+hide:
+  - tags
 ---
 
 # Introductie
@@ -64,7 +63,8 @@ mkdocs-demo/
     ├── getting-started/
     │   ├── index.md
     │   ├── install.md
-    │   └── deployment.md
+    │   ├── deployment.md
+    │   └── alternatieven.md
     │
     └── includes/
             abbreviations.md
@@ -88,9 +88,10 @@ theme:
 
 ---
 
-Klaar om te beginnen? Ga naar de [installatiepagina](install.md) of bekijk direct alle
-[deployment opties](deployment.md) om te zien op welke platforms je jouw documentatiesite
-kunt publiceren.
+Klaar om te beginnen? Ga naar de [installatiepagina](install.md), bekijk de
+[deployment opties](deployment.md) of vergelijk MkDocs met
+[andere documentatietools](alternatieven.md).
 
 [Installatie :material-arrow-right:](install.md){ .md-button .md-button--primary }
-[Deployment opties :material-rocket-launch:](deployment.md){ .md-button }
+[Deployment :material-rocket-launch:](deployment.md){ .md-button }
+[Alternatieven :material-scale-balance:](alternatieven.md){ .md-button }

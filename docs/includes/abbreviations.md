@@ -18,3 +18,7 @@
 *[VS Code]: Visual Studio Code
 *[PR]: Pull Request
 *[MD]: Markdown
+*[SaaS]: Software as a Service
+*[SSG]: Static Site Generator
+*[SEO]: Search Engine Optimization
+*[HMR]: Hot Module Replacement

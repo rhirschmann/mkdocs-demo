@@ -78,6 +78,7 @@ nav:
       - Introductie: getting-started/index.md
       - Installatie: getting-started/install.md
       - Deployment: getting-started/deployment.md
+      - Alternatieven: getting-started/alternatieven.md
   - Features: features.md
   - Blog: blog/index.md
   - Over: about/index.md

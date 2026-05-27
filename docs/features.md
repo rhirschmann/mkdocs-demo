@@ -34,19 +34,44 @@ binnen je documentatieomgeving.
 
 ## 404-pagina
 
-MkDocs genereert automatisch een `404.html` bij het bouwen van de site. Wanneer
-een bezoeker een niet-bestaande URL bezoekt, toont het Material-thema automatisch
-een nette, gestyled foutpagina — zonder extra configuratie.
+Het Material-thema genereert automatisch een nette, gestyled 404-pagina wanneer
+een bezoeker een niet-bestaande URL bezoekt. Hier is geen custom `404.md` voor
+nodig — het werkt standaard out of the box.
+
+### Vereiste configuratie
+
+De enige vereiste is dat `site_url` correct is ingesteld in `mkdocs.yml`. Zonder
+deze instelling worden CSS en JavaScript via relatieve paden geladen, waardoor
+de 404-pagina zonder styling wordt getoond op sites die op een subpad draaien
+(zoals `github.io/mkdocs-demo/`).
+
+```yaml title="mkdocs.yml"
+site_url: https://rhirschmann.github.io/mkdocs-demo/
+```
+
+!!! danger "Zonder site_url"
+    Zonder `site_url` toont de 404-pagina een ongestylede versie met
+    paginabrede iconen en onopgemaakte tekst. Dit komt doordat de browser
+    de CSS- en JavaScript-bestanden niet kan vinden via relatieve paden.
+
+!!! success "Met site_url"
+    Met `site_url` worden alle assets via absolute paden geladen, waardoor
+    de 404-pagina er identiek uitziet aan de rest van de site — inclusief
+    navigatie, zoekfunctie en thema-instellingen.
+
+### Overzicht 404-gedrag
+
+| Situatie | Styling correct? | Opmerking |
+|---|:---:|---|
+| GitHub Pages met `site_url` | ✅ | Absolute paden voor CSS/JS |
+| GitHub Pages zonder `site_url` | ❌ | Relatieve paden werken niet op subpad |
+| `mkdocs serve` (lokaal) | ⚙️ | Dev-server toont eigen ingebouwde 404 |
 
 !!! tip "Testen"
-    Typ een niet-bestaande URL in de adresbalk om de 404-pagina in actie te zien:
+    Typ een niet-bestaande URL in de adresbalk om de 404-pagina in actie te zien,
+    bijvoorbeeld:
 
-    [Bekijk de 404-pagina](/mkdocs-demo/bestaat-niet){ .md-button .md-button--primary }
-
-!!! info "Lokaal vs. live"
-    De 404-pagina werkt alleen correct op de **gebouwde site** via GitHub Pages
-    of een andere hostingomgeving. Via `mkdocs serve` toont de lokale
-    ontwikkelserver altijd zijn eigen ingebouwde 404-melding.
+    [Trigger een 404-pagina](../bestaat-niet/){ .md-button .md-button--primary }
 
 ---
 
