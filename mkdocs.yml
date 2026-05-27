@@ -2,12 +2,9 @@ site_name: mkdocs-demo
 site_description: Voorbeeld MkDocs project met automatische inrichting
 site_author: Ruud Hirschmann
 repo_url: https://github.com/rhirschmann/mkdocs-demo
-theme:
-  name: material
+repo_name: rhirschmann/mkdocs-demo
 
-extra:
-  version: 0.1.0
-  created: 20-05-2026
+copyright: Copyright &copy; 2026 Ruud Hirschmann
 
 theme:
   name: material
@@ -16,12 +13,15 @@ theme:
     - scheme: default
       primary: indigo
       accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Schakel naar donkere modus
     - scheme: slate
       primary: indigo
       accent: deep purple
       toggle:
-        icon: material/weather-night
-        name: Donkere modus
+        icon: material/weather-sunny
+        name: Schakel naar lichte modus
   features:
     - navigation.instant
     - navigation.tabs
@@ -32,14 +32,39 @@ theme:
     - search.highlight
     - content.code.copy
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rhirschmann/mkdocs-demo
+      name: GitHub
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+
 nav:
   - Home: index.md
   - Getting Started:
       - Introductie: getting-started/index.md
       - Installatie: getting-started/install.md
   - Over: about/index.md
+  - Changelog: changelog.md
 
 plugins:
   - search
   - tags
-  - social
