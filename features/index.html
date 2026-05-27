@@ -1293,9 +1293,20 @@ Material-thema. Gebruik deze pagina als referentie voor wat mogelijk is
 binnen je documentatieomgeving.</p>
 <hr />
 <h2 id="404-pagina">404-pagina</h2>
-<p><abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> genereert automatisch een <code>404.html</code> bij een niet-bestaande <abbr title="Uniform Resource Locator">URL</abbr>. Standaard
-is dit een generieke foutpagina van het thema. In deze demo is de 404-pagina
-aangepast naar een eigen, minimalistische versie.</p>
+<p><abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> genereert automatisch een <code>404.html</code> bij het bouwen van de site. Wanneer
+een bezoeker een niet-bestaande <abbr title="Uniform Resource Locator">URL</abbr> bezoekt, toont het Material-thema automatisch
+een nette, gestyled foutpagina — zonder extra configuratie.</p>
+<div class="admonition tip">
+<p class="admonition-title">Testen</p>
+<p>Typ een niet-bestaande <abbr title="Uniform Resource Locator">URL</abbr> in de adresbalk om de 404-pagina in actie te zien:</p>
+<p><a class="md-button md-button--primary" href="/mkdocs-demo/bestaat-niet">Bekijk de 404-pagina</a></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Lokaal vs. live</p>
+<p>De 404-pagina werkt alleen correct op de <strong>gebouwde site</strong> via GitHub Pages
+of een andere hostingomgeving. Via <code>mkdocs serve</code> toont de lokale
+ontwikkelserver altijd zijn eigen ingebouwde 404-melding.</p>
+</div>
 <hr />
 <h2 id="tags">Tags</h2>
 <p>Tags worden bovenaan de pagina getoond en maken het eenvoudig om pagina's
