@@ -28,7 +28,7 @@ jobs:
           key: ${{ runner.os }}-pip-mkdocs-material
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized==1.2.9
+        run: pip install mkdocs mkdocs-material
 
       - name: Configure Git
         run: |
