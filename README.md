@@ -93,9 +93,10 @@ git push
 
 ## 📋 Metadata
 
-| Eigenschap | Waarde          |
-|------------|-----------------|
-| Auteur     | Ruud Hirschmann |
-| Versie     | 0.3.0           |
-| Licentie   | MIT             |
-| Aangemaakt | 27-05-2026      |
+| Eigenschap  | Waarde          |
+|-------------|-----------------|
+| Auteur      | Ruud Hirschmann |
+| Versie      | 0.3.0           |
+| Licentie    | MIT             |
+| Aangemaakt  | 20-05-2026      |
+| Bijgewerkt  | 27-05-2026      |

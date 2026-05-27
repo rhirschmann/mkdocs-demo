@@ -8,9 +8,10 @@ professionele documentatie publiceert — volledig geautomatiseerd en gratis.
 | Eigenschap | Waarde                                                                          |
 |------------|---------------------------------------------------------------------------------|
 | Auteur     | Ruud Hirschmann                                                                 |
-| Versie     | 0.2.0                                                                           |
+| Versie     | 0.3.0                                                                           |
 | Licentie   | MIT                                                                             |
-| Aangemaakt | 27-05-2026                                                                      |
+| Aangemaakt | 20-05-2026                                                                      |
+| Bijgewerkt | 27-05-2026                                                                      |
 | Repository | [github.com/rhirschmann/mkdocs-demo](https://github.com/rhirschmann/mkdocs-demo) |
 
 ## Gebruikte technologieën
