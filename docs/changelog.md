@@ -56,6 +56,14 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 - **`includes/abbreviations.md`** — Afkortingenlijst uitgebreid van 6 naar 20 afkortingen:
     - Nieuw toegevoegd: CSS, Git, pip, CLI, MIT, CDN, JSON, HTTP, HTTPS, AWS, API, VS Code, PR, MD
     - Etymologische nuances verwerkt voor Git, YAML, pip en MIT
+- **`tags.md`** — Tagpagina gemoderniseerd:
+    - Verouderde `tags_file` optie vervangen door `<!-- material/tags -->` marker
+    - Uitleg toegevoegd over het gebruik van tags via frontmatter
+    - Deprecation warning in `mkdocs.yml` opgelost
+- **`mkdocs.yml`** — Configuratie bijgewerkt:
+    - `tags` plugin vervangen door `material/tags`
+    - `tags_file: tags.md` verwijderd — toekomstbestendig en zonder waarschuwingen
+    - `deployment.md` toegevoegd aan de navigatiestructuur
 
 ---
 
