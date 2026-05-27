@@ -1,7 +1,13 @@
+---
+tags:
+  - changelog
+  - versiehistorie
+---
+
 # Changelog
 
-Alle noemenswaardige wijzigingen in dit project worden hier bijgehouden.
-De opmaak volgt [Keep a Changelog](https://keepachangelog.com/nl/1.0.0/).
+Alle wijzigingen van dit project worden op deze pagina bijgehouden.
+Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0.0/).
 
 ---
 
@@ -9,52 +15,66 @@ De opmaak volgt [Keep a Changelog](https://keepachangelog.com/nl/1.0.0/).
 
 ### Toegevoegd
 
-- Features-pagina met demonstratie van alle MkDocs Material mogelijkheden op één plek
-- Blog plugin met automatisch archief, categorieën, tags en leestijdindicatie
-- Eerste blogpost: "Welkom bij de mkdocs-demo blog!"
-- Auteursprofiel via `docs/blog/.authors.yml`
-- Toetsenbordtoetsen notatie via `pymdownx.keys` extensie
-- `content.code.annotate` feature toegevoegd aan thema
+- **`features.md`** — Nieuwe pagina met uitgebreide demonstratie van 13 MkDocs Material features:
+    - 404-pagina (link via knop)
+    - Tags via frontmatter
+    - Admonitions (note, tip, warning, danger, success, info, collapsible)
+    - Code blokken met syntaxkleuring, regelnummers en kopieerknop
+    - Content Tabs voor meerdere talen/opties naast elkaar
+    - Grids & Cards voor visuele overzichten
+    - Knoppen (primair en secundair)
+    - Afkortingen met automatische tooltips
+    - Mermaid diagrammen (flowchart, sequentie, statusdiagram)
+    - Takenlijsten met visuele checkboxen
+    - Tabellen
+    - Footnotes
+    - Iconen & Emoji (Material Design, FontAwesome, Octicons)
+- **`getting-started/deployment.md`** — Nieuwe pagina met configuratievoorbeelden voor 7 hostingplatformen:
+    - GitHub Pages (huidig platform)
+    - GitLab Pages
+    - Netlify
+    - Vercel
+    - Cloudflare Pages
+    - Azure Static Web Apps
+    - Read the Docs
 
 ### Gewijzigd
 
-- Navigatie uitgebreid met "Features" en "Blog" tabbladen
-- `mkdocs.yml` uitgebreid met `pymdownx.keys` extensie
-
-### Opgelost
-
-- `mkdocs-git-revision-date-localized` verwijderd wegens incompatibiliteit met MkDocs 1.6.1
+- **`index.md`** — Welkomstpagina uitgebreid:
+    - Vijfde navigatiekaart toegevoegd voor `features.md`
+    - Kenmerken tabel ingekort naar top 10 met verwijzing naar `features.md`
+    - Info admonition toegevoegd over ondersteunde deployment platforms
+    - Derde navigatieknop toegevoegd naar `features.md`
+- **`getting-started/index.md`** — Introductie pagina bijgewerkt:
+    - `deployment.md` toegevoegd aan de projectstructuur
+    - Verwijzing en navigatieknoppen naar `install.md` en `deployment.md` toegevoegd
+- **`about/index.md`** — Over-pagina uitgebreid:
+    - Tags frontmatter toegevoegd
+    - Pagina-overzicht tabel toegevoegd met alle huidige pagina's
+    - Volledige feature lijst toegevoegd
+    - Overzicht van ondersteunde deployment platforms toegevoegd
+- **`includes/abbreviations.md`** — Afkortingenlijst uitgebreid van 6 naar 20 afkortingen:
+    - Nieuw toegevoegd: CSS, Git, pip, CLI, MIT, CDN, JSON, HTTP, HTTPS, AWS, API, VS Code, PR, MD
+    - Etymologische nuances verwerkt voor Git, YAML, pip en MIT
 
 ---
 
-## [0.2.0] — 2026-05-27
+## [0.2.0] — 2026-05-20
 
 ### Toegevoegd
 
-- Grid cards op de homepage voor visuele navigatie
-- Code annotaties op de Getting Started pagina
-- Task list (checklist) op de installatiepagina
-- Tags-ondersteuning op alle pagina's met tags-indexpagina
-- Afkortingen met automatische tooltips (`includes/abbreviations.md`)
-- Custom 404-pagina
-- Dark mode toggle op beide kleurenschema's (licht én donker)
-- `pymdownx.emoji` extensie voor correcte icoonweergave
-- `pymdownx.tasklist` extensie voor interactieve checkboxen
-- `content.code.annotate` feature voor code annotaties
-- Pip-caching in de GitHub Actions workflow
+- **`blog/`** — Blogfunctionaliteit via de ingebouwde Material blogplugin
+    - `.authors.yml` met auteursprofielen
+    - Eerste blogpost: `2026-05-07-welkom.md`
+- **`changelog.md`** — Versiehistorie pagina
+- **`tags.md`** — Overzichtspagina van alle gebruikte tags
+- **`404.md`** — Aangepaste foutpagina voor niet-bestaande URL's
+- **`includes/abbreviations.md`** — Eerste versie met 6 afkortingen
+- **`.github/workflows/deploy.yml`** — Automatische deployment via GitHub Actions
 
 ### Gewijzigd
 
-- Navigatiestructuur omgezet naar submappen (`getting-started/`, `about/`)
-- `deploy.yml` vereenvoudigd: externe `peaceiris` action vervangen door `mkdocs gh-deploy`
-- Mermaid-diagram labels voorzien van aanhalingstekens voor correcte parsing
-- Bestandsnamen omgezet naar lowercase voor Linux-compatibiliteit
-
-### Opgelost
-
-- Dubbele `theme:` sleutel verwijderd uit `mkdocs.yml`
-- Nav-paden gecorrigeerd na introductie van submappen
-- Paginabrede icoonweergave opgelost door `pymdownx.emoji` toe te voegen
+- **`mkdocs.yml`** — Uitgebreid met plugins en markdown-extensies
 
 ---
 
@@ -62,8 +82,16 @@ De opmaak volgt [Keep a Changelog](https://keepachangelog.com/nl/1.0.0/).
 
 ### Toegevoegd
 
-- Automatische projectstructuur aangemaakt
-- MkDocs configuratie toegevoegd (`mkdocs.yml`)
-- GitHub Actions workflow voor automatische deployment naar GitHub Pages
-- Startpagina, Getting Started en Over-pagina's
-- Zoekfunctie, codeblokken met kopieerknop, navigatietabs
+- Initiële projectstructuur aangemaakt
+- **`index.md`** — Welkomstpagina
+- **`getting-started/index.md`** — Introductie en projectstructuur
+- **`getting-started/install.md`** — Installatie-instructies
+- **`about/index.md`** — Projectinformatie
+- **`mkdocs.yml`** — Basisconfiguratie met Material-thema
+- **`README.md`** — Projectbeschrijving voor GitHub
+
+---
+
+!!! tip "Conventie"
+    Dit project volgt [Semantic Versioning](https://semver.org/lang/nl/):
+    **MAJOR.MINOR.PATCH** — waarbij MINOR nieuwe features zijn en PATCH kleine fixes.
