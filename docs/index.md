@@ -49,6 +49,14 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 
     [:octicons-arrow-right-24: Probeer de zoekbalk](#)
 
+-   :material-star-shooting:{ .lg .middle } **Features & mogelijkheden**
+
+    ---
+
+    Van Mermaid-diagrammen tot tags, admonitions, tabs en iconen.
+
+    [:octicons-arrow-right-24: Bekijk alle features](features.md)
+
 </div>
 
 ---
@@ -63,6 +71,13 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 | Automatische inhoudsopgave | ✅         |
 | Code kopiëren              | ✅         |
 | Automatische deployment    | ✅         |
+| Tags                       | ✅         |
+| Admonitions                | ✅         |
+| Mermaid Diagrammen         | ✅         |
+| Iconen & Emoji             | ✅         |
+
+Bekijk de volledige lijst met alle features en extensies op de [Features](features.md) pagina.
 
 [Ga naar Getting Started :material-arrow-right:](getting-started/index.md){ .md-button .md-button--primary }
+[Bekijk alle features :material-star-shooting:](features.md){ .md-button }
 [Bekijk de broncode :material-github:](https://github.com/rhirschmann/mkdocs-demo){ .md-button }
