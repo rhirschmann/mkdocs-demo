@@ -1,4 +1,5 @@
 site_name: mkdocs-demo
+site_url: https://rhirschmann.github.io/mkdocs-demo/
 site_description: Voorbeeld MkDocs project met automatische inrichting
 site_author: Ruud Hirschmann
 repo_url: https://github.com/rhirschmann/mkdocs-demo
