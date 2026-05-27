@@ -298,6 +298,25 @@
   
 
       
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tags/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -515,6 +534,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#structuur-van-dit-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structuur van dit project
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-annotaties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code annotaties
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -613,6 +654,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -661,6 +729,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#structuur-van-dit-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structuur van dit project
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-annotaties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code annotaties
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -676,22 +766,40 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:introductie" class="md-tag">introductie</a>
+      
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:mkdocs" class="md-tag">mkdocs</a>
+      
+    
+  </nav>
+
 
   
   
 
 
 <h1 id="introductie">Introductie</h1>
-<p>MkDocs is een statische sitegenerator speciaal ontworpen voor projectdocumentatie. Je schrijft je inhoud in <strong>Markdown</strong>, en MkDocs bouwt er automatisch een volledige website van.</p>
-<h2 id="waarom-mkdocs">Waarom MkDocs?</h2>
+<p><abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> is een statische sitegenerator speciaal ontworpen voor projectdocumentatie. Je schrijft je inhoud in <strong>Markdown</strong>, en <abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> bouwt er automatisch een volledige website van.</p>
+<h2 id="waarom-mkdocs">Waarom <abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr>?</h2>
 <div class="admonition tip">
 <p class="admonition-title">Geen webontwikkeling nodig</p>
-<p>Je hoeft geen HTML, CSS of JavaScript te kennen. Alles wat je schrijft in Markdown wordt automatisch omgezet naar een professionele website.</p>
+<p>Je hoeft geen <abbr title="HyperText Markup Language">HTML</abbr>, CSS of JavaScript te kennen. Alles wat je schrijft in Markdown wordt automatisch omgezet naar een professionele website.</p>
 </div>
 <p>Belangrijkste voordelen op een rij:</p>
 <ul>
 <li><strong>Snel</strong>: de site wordt statisch gegenereerd — geen server nodig</li>
-<li><strong>Eenvoudig</strong>: documentatie in Markdown, configuratie in één YAML-bestand</li>
+<li><strong>Eenvoudig</strong>: documentatie in Markdown, configuratie in één <abbr title="YAML Ain't Markup Language">YAML</abbr>-bestand</li>
 <li><strong>Mooi</strong>: het Material-thema geeft direct een professioneel resultaat</li>
 <li><strong>Gratis hosting</strong>: via GitHub Pages publiceer je automatisch bij elke commit</li>
 </ul>
@@ -700,12 +808,43 @@
     A["📝 Markdown schrijven"] --&gt; B["⚙️ mkdocs build"]
     B --&gt; C["🌐 Statische HTML"]
     C --&gt; D["🚀 GitHub Pages"]</code></pre>
+<h2 id="structuur-van-dit-project">Structuur van dit project</h2>
+<p>Een typisch <abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr>-project ziet er zo uit:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>project/
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── mkdocs.yml              ← configuratie
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>└── docs/
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    ├── index.md            ← homepage
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    ├── includes/
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    │   └── abbreviations.md
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    ├── getting-started/
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    │   ├── index.md
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    │   └── install.md
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    └── about/
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        └── index.md
+</span></code></pre></div>
+<h2 id="code-annotaties">Code annotaties</h2>
+<p>Een krachtige functie van <abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> Material is de mogelijkheid om code te voorzien van genummerde annotaties. Klik op de nummers om de uitleg te zien:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">theme</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span><span class="w"> </span><span class="c1"># (1)!</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nl</span><span class="w">   </span><span class="c1"># (2)!</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">palette</span><span class="p">:</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">slate</span><span class="w"> </span><span class="c1"># (3)!</span>
+</span></code></pre></div>
+<ol>
+<li>Het Material-thema geeft je direct een professionele uitstraling.</li>
+<li>Alle <abbr title="User Interface">UI</abbr>-elementen worden automatisch vertaald naar Nederlands.</li>
+<li><code>slate</code> is de donkere modus — schakelbaar via de toggle rechtsboven.</li>
+</ol>
+<p>Klaar om te beginnen? Ga naar de <a href="install/">installatiepagina</a>.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -772,12 +911,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
-      
-        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
       
     
   </body>

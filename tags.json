@@ -1,1 +1,1 @@
-{"mappings": []}
+{"mappings": [{"item": {"url": "", "title": "Home"}, "tags": ["home", "mkdocs"]}, {"item": {"url": "getting-started/", "title": "Introductie"}, "tags": ["introductie", "mkdocs"]}, {"item": {"url": "getting-started/install/", "title": "Installatie"}, "tags": ["installatie", "pip", "python"]}]}
