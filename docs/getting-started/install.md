@@ -1,6 +1,22 @@
+---
+tags:
+  - installatie
+  - python
+  - pip
+---
+
 # Installatie
 
 Op deze pagina installeer je alles wat je nodig hebt om MkDocs lokaal te draaien en je site te deployen naar GitHub Pages.
+
+## Checklist
+
+- [x] GitHub-account aangemaakt
+- [x] Git geïnstalleerd
+- [x] Python 3.8 of hoger geïnstalleerd
+- [ ] `mkdocs` en `mkdocs-material` geïnstalleerd
+- [ ] `mkdocs serve` werkt lokaal
+- [ ] Eerste push naar `master` gedaan
 
 ## Vereisten
 
@@ -30,7 +46,7 @@ Op deze pagina installeer je alles wat je nodig hebt om MkDocs lokaal te draaien
 mkdocs serve
 ```
 
-De site is nu bereikbaar op [http://127.0.0.1:8000](http://127.0.0.1:8000).  
+De site is nu bereikbaar op [http://127.0.0.1:8000](http://127.0.0.1:8000).
 Wijzigingen in je Markdown-bestanden worden **direct zichtbaar** in de browser — zonder herladen.
 
 !!! info "Live reload"
@@ -55,14 +71,14 @@ git push
 ```
 
 !!! success "Automatisch online"
-    Binnen ongeveer een minuut is je site live op:  
+    Binnen ongeveer een minuut is je site live op:
     `https://<jouw-gebruikersnaam>.github.io/<repo-naam>/`
 
 ## Overzicht commando's
 
-| Commando           | Omschrijving                               |
-|--------------------|--------------------------------------------|
-| `mkdocs serve`     | Start lokale ontwikkelserver (live reload) |
-| `mkdocs build`     | Bouw de statische site naar `./site/`      |
-| `mkdocs gh-deploy` | Deploy direct naar GitHub Pages            |
-| `mkdocs new .`     | Maak een nieuw MkDocs-project aan          |
+| Commando             | Omschrijving                               |
+|----------------------|--------------------------------------------|
+| `mkdocs serve`       | Start lokale ontwikkelserver (live reload) |
+| `mkdocs build`       | Bouw de statische site naar `./site/`      |
+| `mkdocs gh-deploy`   | Deploy direct naar GitHub Pages            |
+| `mkdocs new .`       | Maak een nieuw MkDocs-project aan          |
