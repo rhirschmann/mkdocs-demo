@@ -21,3 +21,4 @@ graph LR
     A["📝 Markdown schrijven"] --> B["⚙️ mkdocs build"]
     B --> C["🌐 Statische HTML"]
     C --> D["🚀 GitHub Pages"]
+```
