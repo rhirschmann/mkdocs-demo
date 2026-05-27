@@ -1046,8 +1046,8 @@ Het formaat is gebaseerd op <a href="https://keepachangelog.com/nl/1.0.0/">Keep 
 <h3 id="toegevoegd">Toegevoegd</h3>
 <ul>
 <li><strong><code>features.md</code></strong> — Nieuwe pagina met uitgebreide demonstratie van 13 <abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> Material features:<ul>
-<li>404-pagina (link via knop)</li>
-<li>Tags via frontmatter</li>
+<li>404-pagina (custom implementatie met vergelijkingstabel en codevoorbeeld)</li>
+<li>Tags via frontmatter, inclusief <code>hide: tags</code> optie en gedragsoverzicht</li>
 <li>Admonitions (note, tip, warning, danger, success, info, collapsible)</li>
 <li>Code blokken met syntaxkleuring, regelnummers en kopieerknop</li>
 <li>Content Tabs voor meerdere talen/opties naast elkaar</li>
@@ -1074,23 +1074,44 @@ Het formaat is gebaseerd op <a href="https://keepachangelog.com/nl/1.0.0/">Keep 
 </ul>
 <h3 id="gewijzigd">Gewijzigd</h3>
 <ul>
+<li><strong><code>features.md</code></strong> — Tags-sectie uitgebreid:<ul>
+<li><code>hide: tags</code> frontmatter optie toegevoegd als codevoorbeeld</li>
+<li>Overzichtstabel toegevoegd met taggedrag per instelling</li>
+<li>Tip admonition toegevoegd over best practices voor tags</li>
+</ul>
+</li>
+<li><strong><code>features.md</code></strong> — 404-sectie uitgebreid:<ul>
+<li>Vergelijkingstabel toegevoegd tussen standaard en custom 404-pagina</li>
+<li>Implementatie codevoorbeeld toegevoegd van de daadwerkelijke <code>404.md</code></li>
+<li>Uitleg toegevoegd over <code>hide</code> frontmatter (navigatie en toc verborgen)</li>
+<li>Info admonition toegevoegd over lokaal vs. live gedrag</li>
+<li>Info admonition toegevoegd over testen via <code>mkdocs build</code> + <code>python -m http.server</code></li>
+</ul>
+</li>
 <li><strong><code>index.md</code></strong> — Welkomstpagina uitgebreid:<ul>
 <li>Vijfde navigatiekaart toegevoegd voor <code>features.md</code></li>
 <li>Kenmerken tabel ingekort naar top 10 met verwijzing naar <code>features.md</code></li>
 <li>Info admonition toegevoegd over ondersteunde deployment platforms</li>
 <li>Derde navigatieknop toegevoegd naar <code>features.md</code></li>
+<li><code>hide: tags</code> toegevoegd aan frontmatter</li>
 </ul>
 </li>
 <li><strong><code>getting-started/index.md</code></strong> — Introductie pagina bijgewerkt:<ul>
 <li><code>deployment.md</code> toegevoegd aan de projectstructuur</li>
 <li>Verwijzing en navigatieknoppen naar <code>install.md</code> en <code>deployment.md</code> toegevoegd</li>
+<li><code>hide: tags</code> toegevoegd aan frontmatter</li>
 </ul>
 </li>
 <li><strong><code>about/index.md</code></strong> — Over-pagina uitgebreid:<ul>
 <li>Tags frontmatter toegevoegd</li>
+<li><code>hide: tags</code> toegevoegd aan frontmatter</li>
 <li>Pagina-overzicht tabel toegevoegd met alle huidige pagina's</li>
 <li>Volledige feature lijst toegevoegd</li>
 <li>Overzicht van ondersteunde deployment platforms toegevoegd</li>
+</ul>
+</li>
+<li><strong><code>changelog.md</code></strong> — Frontmatter bijgewerkt:<ul>
+<li><code>hide: tags</code> toegevoegd aan frontmatter</li>
 </ul>
 </li>
 <li><strong><code>includes/abbreviations.md</code></strong> — Afkortingenlijst uitgebreid van 6 naar 20 afkortingen:<ul>
@@ -1099,7 +1120,7 @@ Het formaat is gebaseerd op <a href="https://keepachangelog.com/nl/1.0.0/">Keep 
 </ul>
 </li>
 <li><strong><code>tags.md</code></strong> — Tagpagina gemoderniseerd:<ul>
-<li>Verouderde <code>tags_file</code> optie vervangen door <code>###### changelog.md:2296-2318/name { #changelog.md:2296-2318/slug }</code> marker</li>
+<li>Verouderde <code>tags_file</code> optie vervangen door <code>###### changelog.md:3283-3305/name { #changelog.md:3283-3305/slug }</code> marker</li>
 <li>Uitleg toegevoegd over het gebruik van tags via frontmatter</li>
 <li>Deprecation warning in <code>mkdocs.yml</code> opgelost</li>
 </ul>
@@ -1122,7 +1143,7 @@ Het formaat is gebaseerd op <a href="https://keepachangelog.com/nl/1.0.0/">Keep 
 </li>
 <li><strong><code>changelog.md</code></strong> — Versiehistorie pagina</li>
 <li><strong><code>tags.md</code></strong> — Overzichtspagina van alle gebruikte tags</li>
-<li><strong><code>404.md</code></strong> — Aangepaste foutpagina voor niet-bestaande <abbr title="Uniform Resource Locator">URL</abbr>'s</li>
+<li><strong><code>404.md</code></strong> — Custom foutpagina zonder navigatie en inhoudsopgave</li>
 <li><strong><code>includes/abbreviations.md</code></strong> — Eerste versie met 6 afkortingen</li>
 <li><strong><code>.github/workflows/deploy.yml</code></strong> — Automatische deployment via GitHub Actions</li>
 </ul>
