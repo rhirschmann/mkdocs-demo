@@ -33,13 +33,13 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 
     [:octicons-arrow-right-24: Getting Started](getting-started/index.md)
 
--   :material-github:{ .lg .middle } **Automatische deployment**
+-   :material-rocket-launch:{ .lg .middle } **Flexibele deployment**
 
     ---
 
-    Push naar GitHub, en je site is binnen een minuut live via GitHub Pages.
+    Publiceer je site op GitHub Pages, Netlify, Vercel, Cloudflare Pages en meer.
 
-    [:octicons-arrow-right-24: Over dit project](about/index.md)
+    [:octicons-arrow-right-24: Deployment opties](getting-started/deployment.md)
 
 -   :material-magnify:{ .lg .middle } **Ingebouwde zoekfunctie**
 
@@ -77,6 +77,12 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 | Iconen & Emoji             | ✅         |
 
 Bekijk de volledige lijst met alle features en extensies op de [Features](features.md) pagina.
+
+!!! info "Deployment platforms"
+    Deze demo draait op **GitHub Pages**, maar MkDocs ondersteunt meerdere
+    hostingplatformen zoals Netlify, Vercel, Cloudflare Pages, Azure Static
+    Web Apps en Read the Docs. Bekijk alle opties op de
+    [Deployment](getting-started/deployment.md) pagina.
 
 [Ga naar Getting Started :material-arrow-right:](getting-started/index.md){ .md-button .md-button--primary }
 [Bekijk alle features :material-star-shooting:](features.md){ .md-button }

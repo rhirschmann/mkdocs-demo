@@ -34,17 +34,38 @@ graph LR
 Een typisch MkDocs-project ziet er zo uit:
 
 ```
-project/
-├── mkdocs.yml              ← configuratie
+mkdocs-demo/
+│
+├── mkdocs.yml
+├── README.md
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
 └── docs/
-    ├── index.md            ← homepage
-    ├── includes/
-    │   └── abbreviations.md
+    ├── index.md
+    ├── features.md
+    ├── 404.md
+    ├── changelog.md
+    ├── tags.md
+    │
+    ├── about/
+    │   └── index.md
+    │
+    ├── blog/
+    │   ├── .authors.yml
+    │   ├── index.md
+    │   └── posts/
+    │       └── 2026-05-07-welkom.md
+    │
     ├── getting-started/
     │   ├── index.md
-    │   └── install.md
-    └── about/
-        └── index.md
+    │   ├── install.md
+    │   └── deployment.md
+    │
+    └── includes/
+            abbreviations.md
 ```
 
 ## Code annotaties
@@ -63,4 +84,11 @@ theme:
 2. Alle UI-elementen worden automatisch vertaald naar Nederlands.
 3. `slate` is de donkere modus — schakelbaar via de toggle rechtsboven.
 
-Klaar om te beginnen? Ga naar de [installatiepagina](install.md).
+---
+
+Klaar om te beginnen? Ga naar de [installatiepagina](install.md) of bekijk direct alle
+[deployment opties](deployment.md) om te zien op welke platforms je jouw documentatiesite
+kunt publiceren.
+
+[Installatie :material-arrow-right:](install.md){ .md-button .md-button--primary }
+[Deployment opties :material-rocket-launch:](deployment.md){ .md-button }
