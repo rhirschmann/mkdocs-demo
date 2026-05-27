@@ -34,9 +34,19 @@ binnen je documentatieomgeving.
 
 ## 404-pagina
 
-MkDocs genereert automatisch een `404.html` bij een niet-bestaande URL. Standaard
-is dit een generieke foutpagina van het thema. In deze demo is de 404-pagina
-aangepast naar een eigen, minimalistische versie.
+MkDocs genereert automatisch een `404.html` bij het bouwen van de site. Wanneer
+een bezoeker een niet-bestaande URL bezoekt, toont het Material-thema automatisch
+een nette, gestyled foutpagina — zonder extra configuratie.
+
+!!! tip "Testen"
+    Typ een niet-bestaande URL in de adresbalk om de 404-pagina in actie te zien:
+
+    [Bekijk de 404-pagina](/mkdocs-demo/bestaat-niet){ .md-button .md-button--primary }
+
+!!! info "Lokaal vs. live"
+    De 404-pagina werkt alleen correct op de **gebouwde site** via GitHub Pages
+    of een andere hostingomgeving. Via `mkdocs serve` toont de lokale
+    ontwikkelserver altijd zijn eigen ingebouwde 404-melding.
 
 ---
 
