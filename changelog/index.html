@@ -600,6 +600,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#020-2026-05-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [0.2.0] — 2026-05-27
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.2.0] — 2026-05-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#toegevoegd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toegevoegd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gewijzigd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gewijzigd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opgelost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opgelost
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#010-2026-05-20" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -612,7 +662,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#toegevoegd" class="md-nav__link">
+  <a href="#toegevoegd_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         Toegevoegd
@@ -689,6 +739,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#020-2026-05-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [0.2.0] — 2026-05-27
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.2.0] — 2026-05-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#toegevoegd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toegevoegd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gewijzigd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gewijzigd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opgelost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opgelost
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#010-2026-05-20" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -701,7 +801,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#toegevoegd" class="md-nav__link">
+  <a href="#toegevoegd_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         Toegevoegd
@@ -740,14 +840,42 @@
 <p>Alle noemenswaardige wijzigingen in dit project worden hier bijgehouden.
 De opmaak volgt <a href="https://keepachangelog.com/nl/1.0.0/">Keep a Changelog</a>.</p>
 <hr />
-<h2 id="010-2026-05-20">[0.1.0] — 2026-05-20</h2>
+<h2 id="020-2026-05-27">[0.2.0] — 2026-05-27</h2>
 <h3 id="toegevoegd">Toegevoegd</h3>
+<ul>
+<li>Grid cards op de homepage voor visuele navigatie</li>
+<li>Code annotaties op de Getting Started pagina</li>
+<li>Task list (checklist) op de installatiepagina</li>
+<li>Tags-ondersteuning op alle pagina's met tags-indexpagina</li>
+<li>Afkortingen met automatische tooltips (<code>includes/abbreviations.md</code>)</li>
+<li>Custom 404-pagina</li>
+<li>Dark mode toggle op beide kleurenschema's (licht én donker)</li>
+<li><code>pymdownx.emoji</code> extensie voor correcte icoonweergave</li>
+<li><code>pymdownx.tasklist</code> extensie voor interactieve checkboxen</li>
+<li><code>content.code.annotate</code> feature voor code annotaties</li>
+<li>Pip-caching in de GitHub Actions workflow</li>
+</ul>
+<h3 id="gewijzigd">Gewijzigd</h3>
+<ul>
+<li>Navigatiestructuur omgezet naar submappen (<code>getting-started/</code>, <code>about/</code>)</li>
+<li><code>deploy.yml</code> vereenvoudigd: externe <code>peaceiris</code> action vervangen door <code>mkdocs gh-deploy</code></li>
+<li>Mermaid-diagram labels voorzien van aanhalingstekens voor correcte parsing</li>
+<li>Bestandsnamen omgezet naar lowercase voor Linux-compatibiliteit</li>
+</ul>
+<h3 id="opgelost">Opgelost</h3>
+<ul>
+<li>Dubbele <code>theme:</code> sleutel verwijderd uit <code>mkdocs.yml</code></li>
+<li>Nav-paden gecorrigeerd na introductie van submappen</li>
+<li>Paginabrede icooonweergave opgelost door <code>pymdownx.emoji</code> toe te voegen</li>
+</ul>
+<hr />
+<h2 id="010-2026-05-20">[0.1.0] — 2026-05-20</h2>
+<h3 id="toegevoegd_1">Toegevoegd</h3>
 <ul>
 <li>Automatische projectstructuur aangemaakt</li>
 <li><abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> configuratie toegevoegd (<code>mkdocs.yml</code>)</li>
 <li>GitHub Actions workflow voor automatische deployment naar GitHub Pages</li>
 <li>Startpagina, Getting Started en Over-pagina's</li>
-<li>Donkere/lichte modus schakelaar</li>
 <li>Zoekfunctie, codeblokken met kopieerknop, navigatietabs</li>
 </ul>
 
