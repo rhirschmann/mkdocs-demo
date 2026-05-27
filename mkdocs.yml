@@ -71,3 +71,6 @@ nav:
 plugins:
   - search
   - tags
+
+  xtra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
