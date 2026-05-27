@@ -1,201 +1,294 @@
 ---
-title: Features
 tags:
-  - features
   - demo
+  - features
+  - overzicht
 ---
 
 # Features
 
-Deze pagina demonstreert alle belangrijkste functies van MkDocs Material op één plek — zonder dat je één regel HTML of CSS hoeft te schrijven.
+Deze pagina demonstreert de belangrijkste features van MkDocs met het
+Material-thema. Gebruik deze pagina als referentie voor wat mogelijk is
+binnen je documentatieomgeving.
+
+---
+
+## 404-pagina
+
+MkDocs genereert automatisch een 404-pagina die getoond wordt wanneer een
+bezoeker een niet-bestaande URL bezoekt. Bekijk hieronder hoe deze
+standaard foutpagina eruitziet.
+
+[Bekijk de 404-pagina](/404.html){ .md-button .md-button--primary }
+
+---
+
+## Tags
+
+Tags worden bovenaan de pagina getoond en maken het eenvoudig om pagina's
+te categoriseren en terug te vinden via de tagpagina. Voeg tags toe via
+de frontmatter bovenaan een Markdown-bestand:
+
+```yaml
+---
+tags:
+  - demo
+  - features
+  - overzicht
+---
+```
 
 ---
 
 ## Admonitions
 
-Admonitions zijn gekleurde blokken om informatie te benadrukken. Er zijn negen varianten beschikbaar.
+Admonitions zijn gekleurde blokken om de lezer te attenderen op
+belangrijke informatie. MkDocs Material ondersteunt meerdere typen.
 
-!!! note "Notitie"
-    Gebruik dit voor algemene aanvullende informatie.
+!!! note "Opmerking"
+    Dit is een informatieve opmerking, handig voor aanvullende uitleg.
 
 !!! tip "Tip"
-    Gebruik dit voor handige suggesties en best practices.
+    Gebruik tips om de lezer te wijzen op handige trucs of shortcuts.
 
-!!! warning "Waarschuwing"
-    Gebruik dit voor potentiële problemen waar de lezer op moet letten.
+!!! warning "Let op"
+    Gebruik dit blok om de lezer te waarschuwen voor mogelijke valkuilen.
 
 !!! danger "Gevaar"
-    Gebruik dit voor kritieke informatie die schade kan voorkomen.
+    Dit blok is bedoeld voor kritieke meldingen die directe aandacht vereisen.
 
 !!! success "Succes"
-    Gebruik dit om een positief resultaat te bevestigen.
+    Gebruik dit om een succesvol resultaat of een positieve bevestiging te tonen.
 
 !!! info "Informatie"
-    Gebruik dit voor neutrale, informatieve context.
+    Extra achtergrondinformatie die niet direct noodzakelijk is, maar nuttig kan zijn.
 
-??? "Inklapbaar blok (klik om te openen)"
-    Dit blok is standaard ingeklapt. Ideaal voor aanvullende informatie die niet iedereen nodig heeft.
-
-???+ "Standaard open inklapbaar blok"
-    Dit blok is standaard open, maar kan ingeklapt worden. Gebruik `???+` in plaats van `???`.
+??? example "Uitklapbaar voorbeeld (klik om te openen)"
+    Dit is een collapsible admonition. De inhoud is standaard verborgen
+    en kan worden uitgeklapt door op de titel te klikken.
 
 ---
 
-## Tabs
+## Code Blokken
 
-Groepeer gerelateerde inhoud in overzichtelijke tabbladen — de lezer kiest zelf wat relevant is.
+Code blokken worden gerenderd met syntaxkleuring en een ingebouwde
+kopieerknop. Meerdere programmeertalen worden ondersteund.
+
+```python title="hello_world.py" linenums="1"
+def hello_world(name: str) -> str:
+    """Geeft een begroeting terug."""
+    return f"Hallo, {name}!"
+
+print(hello_world("MkDocs"))
+```
+
+```bash title="installatie"
+pip install mkdocs mkdocs-material
+mkdocs serve
+```
+
+```yaml title="mkdocs.yml"
+site_name: Mijn Documentatie
+theme:
+  name: material
+  language: nl
+```
+
+---
+
+## Content Tabs
+
+Met content tabs kun je gerelateerde inhoud naast elkaar tonen, zoals
+voorbeeldcode in meerdere programmeertalen.
 
 === "Python"
     ```python
-    def hello_world():
-        print("Hallo, wereld!")
-
-    hello_world()
+    def groet():
+        print("Hallo vanuit Python!")
     ```
 
 === "JavaScript"
     ```javascript
-    function helloWorld() {
-        console.log("Hallo, wereld!");
+    function groet() {
+        console.log("Hallo vanuit JavaScript!");
     }
-
-    helloWorld();
     ```
 
 === "Bash"
     ```bash
-    echo "Hallo, wereld!"
+    echo "Hallo vanuit Bash!"
+    ```
+
+=== "PowerShell"
+    ```powershell
+    Write-Host "Hallo vanuit PowerShell!"
     ```
 
 ---
 
-## Code Annotaties
+## Grids & Cards
 
-Voeg genummerde annotaties toe aan codeblokken. Klik op de nummers voor uitleg.
-
-```yaml
-site_name: mkdocs-demo # (1)!
-theme:
-  name: material # (2)!
-  language: nl   # (3)!
-  palette:
-    - scheme: slate # (4)!
-      toggle:
-        icon: material/weather-sunny # (5)!
-```
-
-1. De naam van je site — verschijnt in de browsertab en de navigatiebalk.
-2. Het Material-thema geeft je direct een professionele uitstraling.
-3. Alle UI-elementen worden automatisch vertaald naar Nederlands.
-4. `slate` activeert de donkere modus als standaard kleurenschema.
-5. Het icoon dat verschijnt in de dark/light mode toggle rechtsboven.
-
----
-
-## Toetsenbordtoetsen
-
-Toon toetsencombinaties op een herkenbare, visuele manier met de `pymdownx.keys` extensie.
-
-| Actie             | Toetsencombinatie          |
-|-------------------|----------------------------|
-| Kopiëren          | ++ctrl+c++                 |
-| Plakken           | ++ctrl+v++                 |
-| Opslaan           | ++ctrl+s++                 |
-| Alles selecteren  | ++ctrl+a++                 |
-| Ongedaan maken    | ++ctrl+z++                 |
-| Zoeken            | ++ctrl+f++                 |
-| Nieuw venster     | ++ctrl+n++                 |
-| Venster sluiten   | ++alt+f4++                 |
-
----
-
-## Task Lists
-
-Interactieve checkboxen voor checklists en stappenplannen.
-
-- [x] MkDocs en Material thema installeren
-- [x] `mkdocs.yml` configureren
-- [x] Markdown pagina's schrijven
-- [x] GitHub Actions workflow aanmaken
-- [x] Deployen naar GitHub Pages
-- [ ] Collega's overtuigen om ook MkDocs te gebruiken 😄
-
----
-
-## Grid Cards
+Cards bieden een visuele manier om features of onderwerpen overzichtelijk
+te presenteren.
 
 <div class="grid cards" markdown>
 
--   :material-alert-circle:{ .lg .middle } **Admonitions**
+-   :material-clock-fast:{ .lg .middle } __Snel opgezet__
 
     ---
 
-    Negen varianten van gekleurde blokken voor notities, tips, waarschuwingen en meer.
+    Binnen enkele minuten een professionele documentatiesite draaien
+    met MkDocs en het Material-thema.
 
--   :material-tab:{ .lg .middle } **Tabs**
-
-    ---
-
-    Groepeer gerelateerde inhoud zodat de lezer zelf kiest wat relevant is.
-
--   :material-keyboard:{ .lg .middle } **Toetsenbordtoetsen**
+-   :material-language-markdown:{ .lg .middle } __Markdown__
 
     ---
 
-    Toon toetsencombinaties op een herkenbare, visuele manier.
+    Schrijf documentatie in eenvoudige Markdown-syntax, zonder kennis
+    van HTML of CSS.
 
--   :material-check-all:{ .lg .middle } **Task lists**
-
-    ---
-
-    Interactieve checkboxen voor checklists en stappenplannen.
-
--   :material-code-tags:{ .lg .middle } **Code annotaties**
+-   :material-magnify:{ .lg .middle } __Zoekfunctie__
 
     ---
 
-    Voeg genummerde uitleg toe aan codeblokken — ideaal voor technische documentatie.
+    Ingebouwde zoekfunctie doorzoekt alle pagina's direct in de browser,
+    zonder externe diensten.
 
--   :material-graph:{ .lg .middle } **Mermaid diagrammen**
+-   :material-palette:{ .lg .middle } __Thema & Stijlen__
 
     ---
 
-    Teken flowcharts, sequentiediagrammen en meer in pure tekst.
+    Pas kleuren, lettertypen en de lay-out volledig aan via de
+    `mkdocs.yml` configuratie.
 
 </div>
 
 ---
 
+## Knoppen
+
+MkDocs Material ondersteunt gestylede knoppen via CSS-klassen. Knoppen
+kunnen worden gebruikt als call-to-action of voor navigatie.
+
+[Primaire knop](#){ .md-button .md-button--primary }
+[Secundaire knop](#){ .md-button }
+
+---
+
+## Afkortingen (Abbreviations)
+
+Door gebruik te maken van het `includes/abbreviations.md` bestand worden
+afkortingen automatisch voorzien van een tooltip. Beweeg je muis over de
+onderstaande afkortingen om de uitleg te zien.
+
+Deze documentatie is gebouwd met MkDocs en maakt gebruik van YAML voor
+de configuratie. De HTML-output wordt gegenereerd via een CLI-commando.
+
+--8<-- "includes/abbreviations.md"
+
+---
+
 ## Mermaid Diagrammen
 
-### Flowchart
+Met Mermaid kun je diagrammen en flowcharts schrijven in Markdown.
+Onderstaande voorbeelden laten verschillende diagramtypen zien.
+
+**Flowchart:**
 
 ```mermaid
 graph LR
-    A["📝 Markdown schrijven"] --> B["⚙️ mkdocs build"]
-    B --> C["🌐 Statische HTML"]
-    C --> D["🚀 GitHub Pages"]
+  A[Start] --> B{Keuze};
+  B -->|Ja| C[Doorgaan];
+  B -->|Nee| D[Stoppen];
+  C --> E[Klaar];
 ```
 
-### Sequentiediagram
+**Sequentiediagram:**
 
 ```mermaid
 sequenceDiagram
-    participant D as Developer
-    participant G as GitHub
-    participant P as GitHub Pages
+  participant Gebruiker
+  participant MkDocs
+  participant Browser
+  Gebruiker->>MkDocs: mkdocs serve
+  MkDocs->>Browser: Serveer HTML
+  Browser->>Gebruiker: Toon documentatie
+```
 
-    D->>G: git push
-    G->>G: GitHub Actions gestart
-    G->>G: mkdocs build
-    G->>P: Deploy naar gh-pages branch
-    P-->>D: Site live op GitHub Pages URL
+**Statusdiagram:**
+
+```mermaid
+stateDiagram-v2
+  [*] --> Concept
+  Concept --> Review
+  Review --> Gepubliceerd
+  Review --> Concept
+  Gepubliceerd --> [*]
 ```
 
 ---
 
-## Tooltips op afkortingen
+## Takenlijsten
 
-Hover over de volgende afkortingen om een automatische tooltip te zien — ingesteld via één centraal bestand, actief op de hele site.
+Takenlijsten zijn handig om stappen of checklists overzichtelijk weer te
+geven. Met de `tasklist` extensie worden de checkboxen visueel gestijld.
 
-De documentatie is geschreven in Markdown en geconfigureerd via YAML. Deployment verloopt via CI/CD naar GitHub Pages, zodat elke push automatisch resulteert in een bijgewerkte URL.
+- [x] MkDocs installeren
+- [x] Material-thema instellen
+- [x] Navigatie configureren
+- [x] Features pagina aanmaken
+- [ ] Documentatie uitschrijven
+- [ ] Publiceren naar GitHub Pages
+
+---
+
+## Tabellen
+
+Tabellen worden volledig ondersteund in Markdown en zijn eenvoudig
+leesbaar en uitbreidbaar.
+
+| Feature            | Beschikbaar | Notitie                          |
+|--------------------|:-----------:|----------------------------------|
+| Tags               | ✅          | Via `material/tags` plugin       |
+| Mermaid diagrammen | ✅          | Via `pymdownx.superfences`       |
+| Zoekfunctie        | ✅          | Ingebouwd, geen plugin nodig     |
+| Content Tabs       | ✅          | Via `pymdownx.tabbed`            |
+| Admonitions        | ✅          | Via `admonition` extensie        |
+| Afkortingen        | ✅          | Via `abbr` + snippets            |
+| Knoppen            | ✅          | Via `attr_list` extensie         |
+| Footnotes          | ✅          | Via `footnotes` extensie         |
+| Grids & Cards      | ✅          | Via `md_in_html` + CSS klassen   |
+| Versiebeheer       | ⚙️          | Via `mike` plugin (optioneel)    |
+
+---
+
+## Footnotes
+
+Voetnoten zijn handig voor bronvermeldingen of aanvullende uitleg die de
+hoofdtekst niet onderbreekt. Klik op het cijfer om naar de voetnoot te
+springen.[^1]
+
+MkDocs is een open-source project en actief onderhouden door de
+community.[^2]
+
+[^1]: Dit is een voetnoot. Je kunt hier bronvermeldingen of aanvullende
+      informatie kwijt zonder de leesflow te onderbreken.
+[^2]: Meer informatie op [mkdocs.org](https://www.mkdocs.org) en
+      [squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material).
+
+---
+
+## Iconen & Emoji
+
+MkDocs Material ondersteunt iconen uit drie bibliotheken: **Material
+Design Icons**, **FontAwesome** en **Octicons**. Iconen kunnen inline in
+tekst worden gebruikt.
+
+| Bibliotheek       | Voorbeeld gebruik                   | Resultaat                       |
+|-------------------|-------------------------------------|---------------------------------|
+| Material Design   | `:material-check-circle:`           | :material-check-circle:         |
+| Material Design   | `:material-alert-circle:`           | :material-alert-circle:         |
+| FontAwesome       | `:fontawesome-brands-github:`       | :fontawesome-brands-github:     |
+| FontAwesome       | `:fontawesome-brands-python:`       | :fontawesome-brands-python:     |
+| Octicons          | `:octicons-repo-16:`                | :octicons-repo-16:              |
+| Emoji             | `:smile:`                           | :smile:                         |
