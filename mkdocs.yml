@@ -24,7 +24,7 @@ theme:
         icon: material/weather-sunny
         name: Schakel naar lichte modus
   features:
-    - navigation.instant
+    # - navigation.instant    ← verwijderd vanwege i18n conflict
     - navigation.tabs
     - navigation.sections
     - navigation.expand
@@ -88,9 +88,16 @@ nav:
 plugins:
   - search
   - material/tags
+  - i18n:
+      languages:
+        - locale: nl
+          default: true
+          name: Nederlands
+        - locale: en
+          name: English
+          build: true
   - blog:
       blog_dir: blog
       post_date_format: long
       archive_date_format: MMMM yyyy
       categories: true
-

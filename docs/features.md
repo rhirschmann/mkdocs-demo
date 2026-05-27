@@ -22,6 +22,7 @@ tags:
   - footnotes
   - iconen
   - emoji
+  - meertaligheid
 ---
 
 # Features
@@ -73,6 +74,99 @@ site_url: https://rhirschmann.github.io/mkdocs-demo/
 
     [Trigger een 404-pagina](../bestaat-niet/){ .md-button .md-button--primary }
 
+---
+## Meertaligheid (i18n)
+
+MkDocs ondersteunt meertalige documentatie via de `mkdocs-static-i18n` plugin.
+De UI-elementen van het Material-thema worden automatisch vertaald naar 60+ talen
+via de `language` instelling in het thema.
+
+### UI-taal instellen
+
+De taal van alle UI-elementen (zoekbalk, navigatie, footer) wordt ingesteld via
+het thema:
+
+```yaml title="mkdocs.yml"
+theme:
+  name: material
+  language: nl
+```
+
+### Meertalige content
+
+Voor het aanbieden van documentatie in meerdere talen wordt de `mkdocs-static-i18n`
+plugin gebruikt. Installeer deze via pip:
+
+```bash
+pip install mkdocs-static-i18n
+```
+
+Configureer vervolgens de talen in `mkdocs.yml`:
+
+```yaml title="mkdocs.yml"
+plugins:
+  - i18n:
+      languages:
+        - locale: nl
+          default: true
+          name: Nederlands
+        - locale: en
+          name: English
+          build: true
+```
+
+!!! warning "Bekende beperkingen"
+    De i18n plugin heeft twee bekende beperkingen waar rekening mee gehouden
+    moet worden.
+
+    **navigation.instant:** De taalschakelaar is niet compatibel met de
+    `navigation.instant` feature. Verwijder deze uit je thema-configuratie
+    wanneer je de i18n plugin gebruikt.
+
+    ```yaml title="mkdocs.yml"
+    theme:
+      features:
+        # - navigation.instant  ← niet compatibel met i18n
+        - navigation.tabs
+        - navigation.sections
+    ```
+
+    **Blog plugin:** De i18n plugin kan niet overweg met automatisch gegenereerde
+    bestanden van de blog plugin (archief- en categoriepagina's). Dit resulteert
+    in `Unhandled file case` waarschuwingen die onschadelijk zijn. Zorg ervoor
+    dat de i18n plugin **vóór** de blog plugin staat in `mkdocs.yml`.
+
+### Bestandsnaamconventie
+
+Vertaalde pagina's worden aangeduid met een taalsuffix in de bestandsnaam.
+De standaardtaal heeft geen suffix nodig.
+
+```
+docs/
+├── index.md          # Nederlands (standaard)
+├── index.en.md       # Engels
+├── about/
+│   ├── index.md      # Nederlands (standaard)
+│   └── index.en.md   # Engels
+└── ...
+```
+
+### Taalschakelaar
+
+Na het configureren van de plugin verschijnt er automatisch een taalschakelaar
+in de header van de site. Bezoekers kunnen hiermee eenvoudig wisselen tussen
+de beschikbare talen.
+
+| Instelling | Gedrag |
+|---|---|
+| `default: true` | Deze taal wordt standaard getoond |
+| `build: true` | De vertaling wordt meegebouwd |
+| Geen `.en.md` variant | Pagina wordt alleen in de standaardtaal getoond |
+
+!!! tip "Niet alles hoeft vertaald"
+    Pagina's zonder vertaling worden automatisch in de standaardtaal getoond.
+    Je hoeft dus niet alle pagina's te vertalen om meertaligheid te activeren.
+    
 ---
 
 ## Tags
