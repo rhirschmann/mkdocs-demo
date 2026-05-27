@@ -49,7 +49,6 @@ mkdocs-demo/
 └── docs/
     ├── index.md
     ├── features.md
-    ├── 404.md
     ├── changelog.md
     ├── tags.md
     │

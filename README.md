@@ -44,7 +44,6 @@ Een demonstratieproject dat laat zien hoe eenvoudig je professionele documentati
         │   features.md
         │   changelog.md
         │   tags.md
-        │   404.md
         │
         ├───includes/
         │       abbreviations.md

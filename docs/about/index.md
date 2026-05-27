@@ -43,7 +43,6 @@ Deze demo is stapsgewijs uitgebreid met de volgende pagina's en onderdelen:
 | `blog/`                       | Blogfunctionaliteit via de ingebouwde Material blogplugin     |
 | `changelog.md`                | Versiehistorie van het project                                |
 | `tags.md`                     | Overzichtspagina van alle gebruikte tags                      |
-| `404.md`                      | Aangepaste foutpagina voor niet-bestaande URL's               |
 | `includes/abbreviations.md`   | 20 afkortingen met officiële én etymologische uitleg          |
 
 ---
@@ -62,7 +61,6 @@ Deze demo is stapsgewijs uitgebreid met de volgende pagina's en onderdelen:
 - **Iconen & Emoji** — Material Design, FontAwesome en Octicons
 - **Knoppen** — primaire en secundaire call-to-action knoppen
 - **Blog** — ingebouwde blogfunctionaliteit met auteurspagina's
-- **404-pagina** — aangepaste foutpagina zichtbaar via de navigatie
 
 ---
 

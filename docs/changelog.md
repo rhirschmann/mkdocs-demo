@@ -18,7 +18,6 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 ### Toegevoegd
 
 - **`features.md`** — Nieuwe pagina met uitgebreide demonstratie van 13 MkDocs Material features:
-    - 404-pagina (custom implementatie met vergelijkingstabel en codevoorbeeld)
     - Tags via frontmatter, inclusief `hide: tags` optie en gedragsoverzicht
     - Admonitions (note, tip, warning, danger, success, info, collapsible)
     - Code blokken met syntaxkleuring, regelnummers en kopieerknop

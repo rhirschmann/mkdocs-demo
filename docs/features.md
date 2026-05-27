@@ -38,48 +38,6 @@ MkDocs genereert automatisch een `404.html` bij een niet-bestaande URL. Standaar
 is dit een generieke foutpagina van het thema. In deze demo is de 404-pagina
 aangepast naar een eigen, minimalistische versie.
 
-### Standaard vs. Custom
-
-| | Standaard | Custom (deze demo) |
-|---|---|---|
-| Navigatie zichtbaar | ✅ | ❌ Verborgen |
-| Inhoudsopgave zichtbaar | ✅ | ❌ Verborgen |
-| Eigen tekst | ❌ | ✅ |
-| Knop naar homepage | ❌ | ✅ |
-
-### Implementatie
-
-De custom 404-pagina in deze demo is zo opgezet:
-
-```markdown
----
-hide:
-  - navigation
-  - toc
----
-
-# Pagina niet gevonden 🔍
-
-De pagina die je zoekt bestaat niet (meer).
-
-[Ga naar de homepage](index.md){ .md-button .md-button--primary }
-```
-
-Door `navigation` en `toc` te verbergen via de frontmatter krijgt de
-foutpagina een rustige, afleidingsvrije lay-out. De bezoeker heeft maar
-één optie: terug naar de homepage.
-
-!!! tip "Testen"
-    Typ een niet-bestaande URL in de adresbalk om de 404-pagina in actie
-    te zien, of gebruik de knop hieronder:
-
-[Bekijk de 404-pagina](/404.html){ .md-button .md-button--primary }
-
-!!! info "Lokaal vs. live"
-    De 404-pagina werkt alleen correct op de **gebouwde site** via
-    `mkdocs serve` of GitHub Pages. Als je de `.md` direct opent in je
-    browser, wordt de pagina als gewone pagina getoond.
-
 ---
 
 ## Tags
