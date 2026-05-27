@@ -1,4 +1,7 @@
 ---
+title: Deployment
+hide:
+  - tags
 tags:
   - deployment
   - hosting

@@ -2,6 +2,7 @@
 title: Welkom
 hide:
   - navigation
+  - tags
 tags:
   - home
   - mkdocs

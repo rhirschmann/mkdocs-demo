@@ -1,4 +1,7 @@
 ---
+title: Getting started
+hide:
+  - tags
 tags:
   - mkdocs
   - introductie

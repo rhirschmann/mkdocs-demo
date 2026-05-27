@@ -1,5 +1,7 @@
 ---
 title: Tags
+hide:
+  - tags
 tags:
   - tags
   - overzicht

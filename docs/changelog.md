@@ -1,4 +1,7 @@
 ---
+title: Changelog
+hide:
+  - tags
 tags:
   - changelog
   - versiehistorie

@@ -1,10 +1,25 @@
 ---
+title: Features
+hide:
+  - tags
 tags:
   - demo
   - features
   - overzicht
   - 404
   - tags
+  - afkortingen
+  - admonitions
+  - code blokken
+  - content tabs
+  - grids & Cards
+  - knoppen
+  - mermaid diagrammen
+  - takenlijsten
+  - tabellen
+  - footnotes
+  - iconen
+  - emoji
 ---
 
 # Features

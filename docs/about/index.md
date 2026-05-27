@@ -1,4 +1,7 @@
 ---
+title: About
+hide:
+  - tags
 tags:
   - about
   - overzicht
