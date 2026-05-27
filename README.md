@@ -29,36 +29,37 @@ Een demonstratieproject dat laat zien hoe eenvoudig je professionele documentati
 ---
 
 ## 📁 Projectstructuur
-mkdocs-demo/
-│   mkdocs.yml
-│   README.md
-│   CHANGELOG.md
-│
-├───.github/
-│   └───workflows/
-│           deploy.yml
-│
-└───docs/
-│   index.md
-│   features.md
-│   changelog.md
-│   tags.md
-│   404.md
-│
-├───includes/
-│       abbreviations.md
-│
-├───getting-started/
-│       index.md
-│       install.md
-│
-├───about/
-│       index.md
-│
-└───blog/
-│   .authors.yml
-└───posts/
-        2026-05-27-welkom.md
+
+    mkdocs-demo/
+    │   mkdocs.yml
+    │   README.md
+    │   CHANGELOG.md
+    │
+    ├───.github/
+    │   └───workflows/
+    │           deploy.yml
+    │
+    └───docs/
+        │   index.md
+        │   features.md
+        │   changelog.md
+        │   tags.md
+        │   404.md
+        │
+        ├───includes/
+        │       abbreviations.md
+        │
+        ├───getting-started/
+        │       index.md
+        │       install.md
+        │
+        ├───about/
+        │       index.md
+        │
+        └───blog/
+            │   .authors.yml
+            └───posts/
+                    2026-05-27-welkom.md
 
 ---
 
@@ -72,5 +73,29 @@ pip install mkdocs mkdocs-material
 
 # Start lokale ontwikkelserver (live reload)
 mkdocs serve
+```
 
-De site is bereikbaar op http://127.0.0.1:8000.
+De site is bereikbaar op [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+---
+
+## 📦 Deployment
+
+Deployment verloopt volledig automatisch via GitHub Actions. Bij elke push naar de `master`-branch wordt de site gebouwd en gepubliceerd naar GitHub Pages.
+
+```bash
+git add .
+git commit -m "docs: update documentatie"
+git push
+```
+
+---
+
+## 📋 Metadata
+
+| Eigenschap | Waarde          |
+|------------|-----------------|
+| Auteur     | Ruud Hirschmann |
+| Versie     | 0.3.0           |
+| Licentie   | MIT             |
+| Aangemaakt | 27-05-2026      |
