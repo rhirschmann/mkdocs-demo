@@ -1092,6 +1092,18 @@ Het formaat is gebaseerd op <a href="https://keepachangelog.com/nl/1.0.0/">Keep 
 <li>Etymologische nuances verwerkt voor <abbr title="Geen officiële afkorting — vernoemd naar Brits slang door Linus Torvalds; later backroniem: Global Information Tracker">Git</abbr>, <abbr title="YAML Ain't Markup Language (recursief acroniem; oorspronkelijk: Yet Another Markup Language)">YAML</abbr>, <abbr title="Geen officiële afkorting — recursief backroniem: Pip Installs Packages (ook wel: Pip Installs Python)">pip</abbr> en <abbr title="Massachusetts Institute of Technology (MIT-licentie is vernoemd naar de universiteit)">MIT</abbr></li>
 </ul>
 </li>
+<li><strong><code>tags.md</code></strong> — Tagpagina gemoderniseerd:<ul>
+<li>Verouderde <code>tags_file</code> optie vervangen door <code>###### changelog.md:2296-2318/name { #changelog.md:2296-2318/slug }</code> marker</li>
+<li>Uitleg toegevoegd over het gebruik van tags via frontmatter</li>
+<li>Deprecation warning in <code>mkdocs.yml</code> opgelost</li>
+</ul>
+</li>
+<li><strong><code>mkdocs.yml</code></strong> — Configuratie bijgewerkt:<ul>
+<li><code>tags</code> plugin vervangen door <code>material/tags</code></li>
+<li><code>tags_file: tags.md</code> verwijderd — toekomstbestendig en zonder waarschuwingen</li>
+<li><code>deployment.md</code> toegevoegd aan de navigatiestructuur</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h2 id="020-2026-05-20">[0.2.0] — 2026-05-20</h2>
