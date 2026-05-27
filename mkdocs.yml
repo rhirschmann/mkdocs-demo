@@ -72,5 +72,5 @@ plugins:
   - search
   - tags
 
-  xtra_javascript:
+extra_javascript:
   - https://unpkg.com/mermaid/dist/mermaid.min.js
