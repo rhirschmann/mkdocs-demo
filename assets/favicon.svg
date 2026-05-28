@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3F51B5"/>
+      <stop offset="100%" style="stop-color:#7C4DFF"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8EAF6"/>
+      <stop offset="100%" style="stop-color:#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Linker boekhelft -->
+  <path d="M16 28 C16 22, 22 16, 28 16 L58 16 C60 16, 62 18, 62 20 L62 100 C62 102, 60 104, 58 104 L28 104 C22 104, 16 98, 16 92 Z" 
+        fill="url(#bookGrad)" opacity="0.9"/>
+  
+  <!-- Rechter boekhelft -->
+  <path d="M66 20 C66 18, 68 16, 70 16 L100 16 C106 16, 112 22, 112 28 L112 92 C112 98, 106 104, 100 104 L70 104 C68 104, 66 102, 66 100 Z" 
+        fill="url(#bookGrad)"/>
+  
+  <!-- Boekrug -->
+  <rect x="60" y="16" width="8" height="88" rx="2" fill="#3949AB"/>
+  
+  <!-- Pagina lijnen links -->
+  <line x1="26" y1="36" x2="52" y2="36" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="26" y1="46" x2="52" y2="46" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="26" y1="56" x2="42" y2="56" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Pagina lijnen rechts -->
+  <line x1="76" y1="36" x2="102" y2="36" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="76" y1="46" x2="102" y2="46" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="76" y1="56" x2="92" y2="56" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Code brackets </> -->
+  <text x="64" y="90" text-anchor="middle" fill="url(#codeGrad)" 
+        font-family="'Courier New', monospace" font-size="28" font-weight="bold">&lt;/&gt;</text>
+</svg>
