@@ -13,19 +13,25 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 
 ---
 
+## [0.4.0] — 2026-05-27
+
+### Toegevoegd
+
+- **`assets/logo.svg`** — Custom SVG logo met transparante achtergrond
+  (open boek met code brackets in indigo/paars kleurenschema)
+
+### Gewijzigd
+
+- **`mkdocs.yml`** — Custom logo en favicon toegevoegd via `assets/logo.svg`
+
+---
+
 ## [0.3.0] — 2026-05-27
 
 ### Toegevoegd
 
-- **`features/`** — Features pagina opgesplitst in 8 overzichtelijke subpagina's:
-    - `features/index.md` — Overzicht met navigatiekaarten naar alle subsecties
-    - `features/opmaak.md` — Admonitions, tabellen, knoppen en iconen & emoji
-    - `features/code.md` — Code blokken, content tabs en takenlijsten
-    - `features/diagrammen.md` — Mermaid flowcharts, sequentie- en statusdiagrammen
-    - `features/navigatie.md` — Tags, afkortingen, grids & cards en footnotes
-    - `features/blog.md` — Blogconfiguratie met archief, categorieën en auteurs
-    - `features/meertaligheid.md` — i18n documentatie met bekende beperkingen
-    - `features/404.md` — Automatische 404-pagina en `site_url` vereiste
+- **`features/`** — Features pagina opgesplitst in 8 overzichtelijke subpagina's
+  (index, opmaak, code, diagrammen, navigatie, blog, meertaligheid en 404)
 - **`getting-started/deployment.md`** — Nieuwe pagina met configuratievoorbeelden
   voor 7 hostingplatformen (GitHub Pages, GitLab Pages, Netlify, Vercel,
   Cloudflare Pages, Azure Static Web Apps en Read the Docs)
@@ -44,8 +50,9 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
     - Features navigatie omgezet van enkele pagina naar subsecties
     - Blog plugin uitgebreid met archief, categorieën, leestijd en paginatie
     - Blog navigatie aangepast naar subsectie-stijl voor correcte zijbalk
-- **`index.md`** — Welkomstpagina uitgebreid met vijfde navigatiekaart voor
-  features, top 10 kenmerken tabel, deployment admonition en extra navigatieknop
+- **`index.md`** — Welkomstpagina uitgebreid van 5 naar 8 navigatiekaarten
+  (blog, alternatieven en over toegevoegd) en links gecorrigeerd naar
+  `features/index.md`
 - **`getting-started/index.md`** — Introductie bijgewerkt met `deployment.md`
   en `alternatieven.md` in projectstructuur en navigatieknoppen
 - **`about/index.md`** — Over-pagina uitgebreid met pagina-overzicht, volledige
