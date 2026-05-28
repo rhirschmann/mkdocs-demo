@@ -9,6 +9,8 @@ copyright: Copyright &copy; 2026 Ruud Hirschmann
 
 theme:
   name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
   language: nl
   palette:
     - scheme: default
