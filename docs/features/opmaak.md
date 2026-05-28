@@ -8,6 +8,53 @@ hide:
 
 # Opmaak & Styling
 
+## Logo & Favicon
+
+Het standaard Material-thema logo kan vervangen worden door een eigen logo.
+Voor de beste resultaten gebruik je een SVG-bestand — dit is altijd scherp,
+schaalbaar en heeft automatisch een transparante achtergrond.
+
+### Configuratie
+
+```yaml title="mkdocs.yml"
+theme:
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+```
+
+### Bestandslocatie
+
+```
+docs/
+└── assets/
+    └── logo.svg
+```
+
+### Waarom SVG?
+
+| | PNG | SVG |
+|---|---|---|
+| Transparante achtergrond | ⚙️ Niet altijd | ✅ Altijd |
+| Schaalbaar | ❌ Pixelated bij vergroting | ✅ Scherp op elk formaat |
+| Bestandsgrootte | Groter | Kleiner |
+| Bewerkbaar | Nee | Ja (teksteditor) |
+
+### Alternatief: Material icon als logo
+
+Als je geen eigen afbeelding wilt gebruiken, kun je een ingebouwd Material
+icon als logo instellen:
+
+```yaml title="mkdocs.yml"
+theme:
+  icon:
+    logo: material/book-open-page-variant
+```
+
+!!! tip "Logo ontwerp"
+    Gebruik lichte kleuren (wit of lichtgrijs) voor je logo, zodat het
+    goed zichtbaar is op de gekleurde header. SVG-bestanden zijn ideaal
+    omdat ze geen achtergrond hebben en scherp blijven op elk schermformaat.
+
 ## Admonitions
 
 Admonitions zijn gekleurde blokken om de lezer te attenderen op
