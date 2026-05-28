@@ -1,6 +1,6 @@
 # mkdocs-demo
 
-Een demonstratieproject dat laat zien hoe eenvoudig je professionele documentatie publiceert met **MkDocs** en **Material for MkDocs** — volledig geautomatiseerd via GitHub Actions.
+Een demonstratieproject dat laat zien hoe je eenvoudig professionele documentatie publiceert met **MkDocs** en **Material for MkDocs** — volledig geautomatiseerd via GitHub Actions.
 
 ---
 
