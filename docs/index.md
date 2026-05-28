@@ -56,7 +56,31 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 
     Van Mermaid-diagrammen tot tags, admonitions, tabs en iconen.
 
-    [:octicons-arrow-right-24: Bekijk alle features](features.md)
+    [:octicons-arrow-right-24: Bekijk alle features](features/index.md)
+
+-   :material-post:{ .lg .middle } **Blog**
+
+    ---
+
+    Blogposts met automatisch archief, categorieën en auteursinformatie.
+
+    [:octicons-arrow-right-24: Naar de blog](blog/index.md)
+
+-   :material-scale-balance:{ .lg .middle } **Alternatieven**
+
+    ---
+
+    Vergelijk MkDocs met 9 andere documentatietools.
+
+    [:octicons-arrow-right-24: Bekijk alternatieven](getting-started/alternatieven.md)
+
+-   :material-information:{ .lg .middle } **Over dit project**
+
+    ---
+
+    Projectinformatie, technologieën en licentie.
+
+    [:octicons-arrow-right-24: Over](about/index.md)
 
 </div>
 
@@ -77,7 +101,7 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 | Mermaid Diagrammen         | ✅         |
 | Iconen & Emoji             | ✅         |
 
-Bekijk de volledige lijst met alle features en extensies op de [Features](features.md) pagina.
+Bekijk de volledige lijst met alle features en extensies op de [Features](features/index.md) pagina.
 
 !!! info "Deployment platforms"
     Deze demo draait op **GitHub Pages**, maar MkDocs ondersteunt meerdere
@@ -86,5 +110,5 @@ Bekijk de volledige lijst met alle features en extensies op de [Features](featur
     [Deployment](getting-started/deployment.md) pagina.
 
 [Ga naar Getting Started :material-arrow-right:](getting-started/index.md){ .md-button .md-button--primary }
-[Bekijk alle features :material-star-shooting:](features.md){ .md-button }
+[Bekijk alle features :material-star-shooting:](features/index.md){ .md-button }
 [Bekijk de broncode :material-github:](https://github.com/rhirschmann/mkdocs-demo){ .md-button }

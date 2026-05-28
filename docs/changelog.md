@@ -17,10 +17,15 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 
 ### Toegevoegd
 
-- **`features.md`** — Nieuwe pagina met uitgebreide demonstratie van 14 MkDocs
-  Material features (404-pagina, tags, admonitions, code blokken, content tabs,
-  grids & cards, knoppen, afkortingen, Mermaid diagrammen, takenlijsten, tabellen,
-  footnotes, iconen & emoji en meertaligheid)
+- **`features/`** — Features pagina opgesplitst in 8 overzichtelijke subpagina's:
+    - `features/index.md` — Overzicht met navigatiekaarten naar alle subsecties
+    - `features/opmaak.md` — Admonitions, tabellen, knoppen en iconen & emoji
+    - `features/code.md` — Code blokken, content tabs en takenlijsten
+    - `features/diagrammen.md` — Mermaid flowcharts, sequentie- en statusdiagrammen
+    - `features/navigatie.md` — Tags, afkortingen, grids & cards en footnotes
+    - `features/blog.md` — Blogconfiguratie met archief, categorieën en auteurs
+    - `features/meertaligheid.md` — i18n documentatie met bekende beperkingen
+    - `features/404.md` — Automatische 404-pagina en `site_url` vereiste
 - **`getting-started/deployment.md`** — Nieuwe pagina met configuratievoorbeelden
   voor 7 hostingplatformen (GitHub Pages, GitLab Pages, Netlify, Vercel,
   Cloudflare Pages, Azure Static Web Apps en Read the Docs)
@@ -34,14 +39,11 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
     - `site_url` toegevoegd — vereist voor correcte 404-styling op GitHub Pages
     - `tags` plugin vervangen door `material/tags`
     - `tags_file: tags.md` verwijderd — toekomstbestendig en zonder waarschuwingen
+    - `navigation.indexes` toegevoegd — voorkomt dubbele sectie-headers
     - `deployment.md` en `alternatieven.md` toegevoegd aan de navigatiestructuur
-- **`features.md`** — 404-sectie bijgewerkt met uitleg over `site_url` vereiste,
-  gedragstabel per platform en admonitions voor met/zonder `site_url`
-- **`features.md`** — Tags-sectie uitgebreid met `hide: tags` optie,
-  overzichtstabel voor taggedrag en best practice tip
-- **`features.md`** — Meertaligheid (i18n) sectie toegevoegd met configuratie,
-  bestandsnaamconventie, taalschakelaar en bekende beperkingen (niet compatibel
-  met de blog plugin, [GitHub Issue #4863](https://github.com/squidfunk/mkdocs-material/issues/4863))
+    - Features navigatie omgezet van enkele pagina naar subsecties
+    - Blog plugin uitgebreid met archief, categorieën, leestijd en paginatie
+    - Blog navigatie aangepast naar subsectie-stijl voor correcte zijbalk
 - **`index.md`** — Welkomstpagina uitgebreid met vijfde navigatiekaart voor
   features, top 10 kenmerken tabel, deployment admonition en extra navigatieknop
 - **`getting-started/index.md`** — Introductie bijgewerkt met `deployment.md`
@@ -56,6 +58,8 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 
 ### Verwijderd
 
+- **`features.md`** — Enkele features pagina vervangen door `features/` map
+  met 8 subpagina's
 - **`404.md`** — Custom 404-pagina verwijderd; het Material-thema genereert
   automatisch een correcte 404-pagina wanneer `site_url` is ingesteld
 
