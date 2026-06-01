@@ -20,7 +20,7 @@ binnen je documentatieomgeving.
 
     ---
 
-    Admonitions, tabellen, knoppen en iconen & emoji.
+    Logo & favicon, custom CSS, admonitions, tabellen, knoppen en iconen & emoji.
 
     [:octicons-arrow-right-24: Opmaak & Styling](opmaak.md)
 

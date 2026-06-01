@@ -13,17 +13,22 @@ Het formaat is gebaseerd op [Keep a Changelog](https://keepachangelog.com/nl/1.0
 
 ---
 
-## [0.4.0] — 2026-05-27
+## [0.4.0] — 2026-05-28
 
 ### Toegevoegd
 
 - **`assets/logo.svg`** — Custom SVG logo met transparante achtergrond
   (open boek met code brackets in indigo/paars kleurenschema)
+- **`stylesheets/extra.css`** — Custom CSS met afgeronde hoeken voor code
+  blokken, admonitions, tabellen en content tabs, hover-effecten op cards,
+  subtiele schaduwen op header en footer
+- **`.gitignore`** — `site/` directory uitgesloten van Git tracking
 
 ### Gewijzigd
 
-- **`mkdocs.yml`** — Custom logo en favicon toegevoegd via `assets/logo.svg`
-
+- **`mkdocs.yml`** — Custom logo, favicon en extra CSS toegevoegd
+- **`features/opmaak.md`** — Logo & favicon en custom CSS secties toegevoegd
+- **`features/index.md`** — Opmaak & styling card bijgewerkt met logo en CSS
 ---
 
 ## [0.3.0] — 2026-05-27

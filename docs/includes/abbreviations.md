@@ -22,3 +22,5 @@
 *[SSG]: Static Site Generator
 *[SEO]: Search Engine Optimization
 *[HMR]: Hot Module Replacement
+*[PNG]: Portable Network Graphics
+*[SVG]: Scalable Vector Graphics

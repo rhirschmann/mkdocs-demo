@@ -55,6 +55,99 @@ theme:
     goed zichtbaar is op de gekleurde header. SVG-bestanden zijn ideaal
     omdat ze geen achtergrond hebben en scherp blijven op elk schermformaat.
 
+---
+## Custom CSS
+
+MkDocs Material kan visueel worden aangepast met een eigen CSS-bestand. Hiermee
+kun je de standaard styling verfijnen zonder het thema te overschrijven.
+
+### Configuratie
+
+Maak een CSS-bestand aan in `docs/stylesheets/` en verwijs ernaar in `mkdocs.yml`:
+
+```yaml title="mkdocs.yml"
+extra_css:
+  - stylesheets/extra.css
+```
+
+### Voorbeeld: extra.css
+
+In deze demo worden de volgende aanpassingen toegepast:
+
+```css title="docs/stylesheets/extra.css"
+/* Afgeronde hoeken voor code blokken */
+.md-typeset pre {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Afgeronde hoeken voor admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+}
+
+/* Header schaduw */
+.md-header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect op cards */
+.md-typeset .grid.cards > ul > li {
+  transition: all 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Afgeronde hoeken voor tabellen */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Afgeronde hoeken voor content tabs */
+.md-typeset .tabbed-set {
+  border-radius: 8px;
+}
+
+/* Vloeiende hover op navigatie links */
+.md-nav__link {
+  transition: color 0.2s ease;
+}
+
+/* Footer subtiele schaduw */
+.md-footer {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+```
+
+### Overzicht aanpassingen
+
+| Aanpassing | Effect |
+|---|---|
+| Afgeronde code blokken | Zachtere, moderne uitstraling |
+| Afgeronde admonitions | Consistent met code blokken |
+| Header schaduw | Subtiele diepte, header springt eruit |
+| Card hover effect | Kaarten liften op bij hover |
+| Afgeronde tabellen | Consistent afgeronde hoeken |
+| Afgeronde content tabs | Consistent afgeronde hoeken |
+| Navigatie hover | Vloeiende kleurovergang |
+| Footer schaduw | Subtiele scheiding van content |
+
+!!! tip "Custom kleuren"
+    Je kunt ook de primaire kleuren volledig aanpassen via CSS variabelen:
+
+    ```css
+    :root {
+      --md-primary-fg-color: #2e7d32;
+      --md-accent-fg-color: #ff9100;
+    }
+    ```
+---
+
 ## Admonitions
 
 Admonitions zijn gekleurde blokken om de lezer te attenderen op
