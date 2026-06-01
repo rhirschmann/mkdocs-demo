@@ -1,0 +1,51 @@
+/* Afgeronde hoeken voor code blokken */
+.md-typeset pre {
+  border-radius: 8px;
+}
+
+/* Afgeronde hoeken voor admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+}
+
+/* Header schaduw */
+.md-header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect op cards */
+.md-typeset .grid.cards > ul > li {
+  transition: all 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Afgeronde hoeken voor tabellen */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Afgeronde hoeken voor content tabs */
+.md-typeset .tabbed-set {
+  border-radius: 8px;
+}
+
+/* Subtiele schaduw voor code blokken */
+.md-typeset pre {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Vloeiende hover op navigatie links */
+.md-nav__link {
+  transition: color 0.2s ease;
+}
+
+/* Footer subtiele schaduw */
+.md-footer {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}

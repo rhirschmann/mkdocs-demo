@@ -55,6 +55,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -817,6 +819,56 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#custom-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom CSS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuratie_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuratie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voorbeeld-extracss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voorbeeld: extra.css
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overzicht-aanpassingen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overzicht aanpassingen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#admonitions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1487,6 +1539,56 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#custom-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom CSS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuratie_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuratie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voorbeeld-extracss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voorbeeld: extra.css
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overzicht-aanpassingen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overzicht aanpassingen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#admonitions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1573,7 +1675,7 @@
 <h1 id="opmaak-styling">Opmaak &amp; Styling</h1>
 <h2 id="logo-favicon">Logo &amp; Favicon</h2>
 <p>Het standaard Material-thema logo kan vervangen worden door een eigen logo.
-Voor de beste resultaten gebruik je een SVG-bestand — dit is altijd scherp,
+Voor de beste resultaten gebruik je een <abbr title="Scalable Vector Graphics">SVG</abbr>-bestand — dit is altijd scherp,
 schaalbaar en heeft automatisch een transparante achtergrond.</p>
 <h3 id="configuratie">Configuratie</h3>
 <div class="language-yaml highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">theme</span><span class="p">:</span>
@@ -1585,13 +1687,13 @@ schaalbaar en heeft automatisch een transparante achtergrond.</p>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>└── assets/
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    └── logo.svg
 </span></code></pre></div>
-<h3 id="waarom-svg">Waarom SVG?</h3>
+<h3 id="waarom-svg">Waarom <abbr title="Scalable Vector Graphics">SVG</abbr>?</h3>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>PNG</th>
-<th>SVG</th>
+<th><abbr title="Portable Network Graphics">PNG</abbr></th>
+<th><abbr title="Scalable Vector Graphics">SVG</abbr></th>
 </tr>
 </thead>
 <tbody>
@@ -1627,9 +1729,121 @@ icon als logo instellen:</p>
 <div class="admonition tip">
 <p class="admonition-title">Logo ontwerp</p>
 <p>Gebruik lichte kleuren (wit of lichtgrijs) voor je logo, zodat het
-goed zichtbaar is op de gekleurde header. SVG-bestanden zijn ideaal
+goed zichtbaar is op de gekleurde header. <abbr title="Scalable Vector Graphics">SVG</abbr>-bestanden zijn ideaal
 omdat ze geen achtergrond hebben en scherp blijven op elk schermformaat.</p>
 </div>
+<hr />
+<h2 id="custom-css">Custom <abbr title="Cascading Style Sheets">CSS</abbr></h2>
+<p><abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> Material kan visueel worden aangepast met een eigen <abbr title="Cascading Style Sheets">CSS</abbr>-bestand. Hiermee
+kun je de standaard styling verfijnen zonder het thema te overschrijven.</p>
+<h3 id="configuratie_1">Configuratie</h3>
+<p>Maak een <abbr title="Cascading Style Sheets">CSS</abbr>-bestand aan in <code>docs/stylesheets/</code> en verwijs ernaar in <code>mkdocs.yml</code>:</p>
+<div class="language-yaml highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">extra_css</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stylesheets/extra.css</span>
+</span></code></pre></div>
+<h3 id="voorbeeld-extracss">Voorbeeld: extra.css</h3>
+<p>In deze demo worden de volgende aanpassingen toegepast:</p>
+<div class="language-css highlight"><span class="filename">docs/stylesheets/extra.css</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c">/* Afgeronde hoeken voor code blokken */</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="nt">pre</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">6</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.08</span><span class="p">);</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">}</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c">/* Afgeronde hoeken voor admonitions */</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition</span><span class="o">,</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="nt">details</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">}</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c">/* Header schaduw */</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="p">.</span><span class="nc">md-header</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="p">}</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="c">/* Hover effect op cards */</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">grid</span><span class="p">.</span><span class="nc">cards</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">li</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="kc">all</span><span class="w"> </span><span class="mf">0.2</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="p">}</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">grid</span><span class="p">.</span><span class="nc">cards</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">li</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">  </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">-2</span><span class="kt">px</span><span class="p">);</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.15</span><span class="p">);</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="p">}</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="c">/* Afgeronde hoeken voor tabellen */</span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="nt">table</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">class</span><span class="o">])</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">  </span><span class="k">overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span>
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="p">}</span>
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="c">/* Afgeronde hoeken voor content tabs */</span>
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">tabbed-set</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-36"><a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-4-37"><a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="p">}</span>
+</span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a>
+</span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="c">/* Vloeiende hover op navigatie links */</span>
+</span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="p">.</span><span class="nc">md-nav__link</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="kc">color</span><span class="w"> </span><span class="mf">0.2</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span>
+</span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="p">}</span>
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a>
+</span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="c">/* Footer subtiele schaduw */</span>
+</span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="p">.</span><span class="nc">md-footer</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">-2</span><span class="kt">px</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">);</span>
+</span><span id="__span-4-47"><a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="overzicht-aanpassingen">Overzicht aanpassingen</h3>
+<table>
+<thead>
+<tr>
+<th>Aanpassing</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Afgeronde code blokken</td>
+<td>Zachtere, moderne uitstraling</td>
+</tr>
+<tr>
+<td>Afgeronde admonitions</td>
+<td>Consistent met code blokken</td>
+</tr>
+<tr>
+<td>Header schaduw</td>
+<td>Subtiele diepte, header springt eruit</td>
+</tr>
+<tr>
+<td>Card hover effect</td>
+<td>Kaarten liften op bij hover</td>
+</tr>
+<tr>
+<td>Afgeronde tabellen</td>
+<td>Consistent afgeronde hoeken</td>
+</tr>
+<tr>
+<td>Afgeronde content tabs</td>
+<td>Consistent afgeronde hoeken</td>
+</tr>
+<tr>
+<td>Navigatie hover</td>
+<td>Vloeiende kleurovergang</td>
+</tr>
+<tr>
+<td>Footer schaduw</td>
+<td>Subtiele scheiding van content</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Custom kleuren</p>
+<p>Je kunt ook de primaire kleuren volledig aanpassen via <abbr title="Cascading Style Sheets">CSS</abbr> variabelen:</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nv">--md-primary-fg-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#2e7d32</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nv">--md-accent-fg-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#ff9100</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<hr />
 <h2 id="admonitions">Admonitions</h2>
 <p>Admonitions zijn gekleurde blokken om de lezer te attenderen op
 belangrijke informatie. <abbr title="Statische sitegenerator voor projectdocumentatie">MkDocs</abbr> Material ondersteunt meerdere typen.</p>
