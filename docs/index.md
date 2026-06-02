@@ -86,21 +86,6 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 
 ---
 
-## Kenmerken van deze demo
-
-| Functie                    | Ingebouwd? |
-|----------------------------|:----------:|
-| Zoekfunctie                | ✅         |
-| Donkere modus              | ✅         |
-| Mobiele weergave           | ✅         |
-| Automatische inhoudsopgave | ✅         |
-| Code kopiëren              | ✅         |
-| Automatische deployment    | ✅         |
-| Tags                       | ✅         |
-| Admonitions                | ✅         |
-| Mermaid Diagrammen         | ✅         |
-| Iconen & Emoji             | ✅         |
-
 Bekijk de volledige lijst met alle features en extensies op de [Features](features/index.md) pagina.
 
 !!! info "Deployment platforms"
