@@ -84,16 +84,6 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 
 </div>
 
----
-
-Bekijk de volledige lijst met alle features en extensies op de [Features](features/index.md) pagina.
-
-!!! info "Deployment platforms"
-    Deze demo draait op **GitHub Pages**, maar MkDocs ondersteunt meerdere
-    hostingplatformen zoals Netlify, Vercel, Cloudflare Pages, Azure Static
-    Web Apps en Read the Docs. Bekijk alle opties op de
-    [Deployment](getting-started/deployment.md) pagina.
-
 [Ga naar Getting Started :material-arrow-right:](getting-started/index.md){ .md-button .md-button--primary }
 [Bekijk alle features :material-star-shooting:](features/index.md){ .md-button }
 [Bekijk de broncode :material-github:](https://github.com/rhirschmann/mkdocs-demo){ .md-button }
