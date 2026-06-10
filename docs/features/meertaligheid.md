@@ -1,4 +1,5 @@
 ---
+title: Feature - Meertaligheid
 tags:
   - features
   - i18n

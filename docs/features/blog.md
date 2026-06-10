@@ -1,4 +1,5 @@
 ---
+title: Feature - Blog
 tags:
   - features
   - blog

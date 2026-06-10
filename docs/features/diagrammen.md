@@ -1,5 +1,6 @@
 ---
 tags:
+title: Feature - Diagrammen
   - features
   - mermaid
 hide:

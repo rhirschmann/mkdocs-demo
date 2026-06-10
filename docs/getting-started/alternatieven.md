@@ -1,4 +1,5 @@
 ---
+title: Alternatieven
 tags:
   - mkdocs
   - alternatieven

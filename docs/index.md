@@ -1,5 +1,5 @@
 ---
-title: Welkom
+title: Home
 hide:
   - navigation
   - toc
