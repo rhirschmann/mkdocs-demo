@@ -2,19 +2,50 @@
 title: Welkom
 hide:
   - navigation
+  - toc
   - tags
 tags:
   - home
   - mkdocs
 ---
 
-# Welkom bij mkdocs-demo 👋
-
-Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** en het **Material**-thema — zonder dat je één regel HTML of CSS hoeft te schrijven.
+<div class="hero">
+  <div class="hero__content">
+    <div class="hero__badge">
+      <span class="hero__badge-dot"></span>
+      v0.4.0 — Nu live op GitHub Pages
+    </div>
+    <h1 class="hero__title">Documentatie die gewoon <span class="hero__title-highlight">wérkt</span></h1>
+    <p class="hero__subtitle">Gebouwd met <strong>MkDocs</strong> en het <strong>Material</strong>-thema — geschreven in Markdown, gepubliceerd in seconden, zonder één regel HTML of CSS.</p>
+    <div class="hero__buttons">
+      <a href="getting-started/index.md" class="hero__btn hero__btn--primary">🚀 Aan de slag</a>
+      <a href="features/index.md" class="hero__btn">✨ Features</a>
+      <a href="https://github.com/rhirschmann/mkdocs-demo" class="hero__btn">📦 GitHub</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stats__item" data-target="14" data-suffix="+">
+      <div class="hero-stats__value">0+</div>
+      <div class="hero-stats__label">Gedemonstreerde features</div>
+    </div>
+    <div class="hero-stats__item" data-target="7" data-suffix="">
+      <div class="hero-stats__value">0</div>
+      <div class="hero-stats__label">Deployment platforms</div>
+    </div>
+    <div class="hero-stats__item" data-target="9" data-suffix="">
+      <div class="hero-stats__value">0</div>
+      <div class="hero-stats__label">Vergeleken alternatieven</div>
+    </div>
+    <div class="hero-stats__item" data-target="100" data-suffix="%">
+      <div class="hero-stats__value">0%</div>
+      <div class="hero-stats__label">Markdown</div>
+    </div>
+  </div>
+</div>
 
 ---
 
-## Wat vind je hier?
+## Waarom deze demo?
 
 <div class="grid cards" markdown>
 
@@ -84,6 +115,14 @@ Een moderne, snelle en overzichtelijke documentatiesite gebouwd met **MkDocs** e
 
 </div>
 
-[Ga naar Getting Started :material-arrow-right:](getting-started/index.md){ .md-button .md-button--primary }
-[Bekijk alle features :material-star-shooting:](features/index.md){ .md-button }
-[Bekijk de broncode :material-github:](https://github.com/rhirschmann/mkdocs-demo){ .md-button }
+<div class="cta-banner">
+  <h2>Klaar om te beginnen?</h2>
+  <p>Zet binnen enkele minuten je eigen professionele documentatiesite op met MkDocs en het Material-thema.</p>
+  <a href="getting-started/index.md" class="hero__btn hero__btn--primary">Ga naar Getting Started →</a>
+</div>
+
+!!! info "Deployment platforms"
+    Deze demo draait op **GitHub Pages**, maar MkDocs ondersteunt meerdere
+    hostingplatformen zoals Netlify, Vercel, Cloudflare Pages, Azure Static
+    Web Apps en Read the Docs. Bekijk alle opties op de
+    [Deployment](getting-started/deployment.md) pagina.
